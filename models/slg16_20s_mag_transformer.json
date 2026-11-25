@@ -1,0 +1,4859 @@
+{
+ "format": "openkeito-model",
+ "version": "0.7",
+ "name": "ieee39_slg16_20s_mag_transformer",
+ "description": "IEEE 39-bus system with a WECC generic PV plant at bus 30, converted from the emthub CIM (IEEE39.xml, IEEE39_ic.xml) by cim_to_openkeito.py",
+ "simulation": {
+  "time_step_s": 1e-05,
+  "end_time_s": 20.0,
+  "method": "2s-dirk",
+  "output_interval_steps": 50,
+  "initialization": "steady_state"
+ },
+ "components": [
+  {
+   "type": "bergeron_line",
+   "name": "L10_11_1",
+   "buses": [
+    "B10",
+    "B11"
+   ],
+   "length_km": 13.596134157897541,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.035017306719016844,
+    "l1_h_per_km": 0.0009985276279089689,
+    "c1_f_per_km": 1.1949308624747422e-08,
+    "r0_ohm_per_km": 0.07003461343803369,
+    "l0_h_per_km": 0.0029955828837269064,
+    "c0_f_per_km": 7.169585174848452e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L10_13_1",
+   "buses": [
+    "B10",
+    "B13"
+   ],
+   "length_km": 13.596134157897541,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.035017306719016844,
+    "l1_h_per_km": 0.0009985276279089689,
+    "c1_f_per_km": 1.1949308624747422e-08,
+    "r0_ohm_per_km": 0.07003461343803369,
+    "l0_h_per_km": 0.0029955828837269064,
+    "c0_f_per_km": 7.169585174848452e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L13_14_1",
+   "buses": [
+    "B13",
+    "B14"
+   ],
+   "length_km": 32.034708386119,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.033439511516333134,
+    "l1_h_per_km": 0.0009954229977642234,
+    "c1_f_per_km": 1.1986577387724144e-08,
+    "r0_ohm_per_km": 0.06687902303266627,
+    "l0_h_per_km": 0.002986268993292671,
+    "c0_f_per_km": 7.1919464326344865e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L14_15_1",
+   "buses": [
+    "B14",
+    "B15"
+   ],
+   "length_km": 68.43651076667564,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.0313056579886776,
+    "l1_h_per_km": 0.001001103422957763,
+    "c1_f_per_km": 1.1918563579544006e-08,
+    "r0_ohm_per_km": 0.0626113159773552,
+    "l0_h_per_km": 0.0030033102688732894,
+    "c0_f_per_km": 7.151138147726403e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L15_16_1",
+   "buses": [
+    "B15",
+    "B16"
+   ],
+   "length_km": 30.787854914934993,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.03479375237280189,
+    "l1_h_per_km": 0.0009639521885399959,
+    "c1_f_per_km": 1.2377911413109636e-08,
+    "r0_ohm_per_km": 0.06958750474560378,
+    "l0_h_per_km": 0.002891856565619988,
+    "c0_f_per_km": 7.426746847865782e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L16_17_1",
+   "buses": [
+    "B16",
+    "B17"
+   ],
+   "length_km": 26.53925397414759,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.03139406257657477,
+    "l1_h_per_km": 0.0010587864324024668,
+    "c1_f_per_km": 1.1269236581684617e-08,
+    "r0_ohm_per_km": 0.06278812515314953,
+    "l0_h_per_km": 0.0031763592972074007,
+    "c0_f_per_km": 6.761541949010769e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L16_19_1",
+   "buses": [
+    "B16",
+    "B19"
+   ],
+   "length_km": 59.12505351154704,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.03220969600692325,
+    "l1_h_per_km": 0.0010412862555446646,
+    "c1_f_per_km": 1.145863083536055e-08,
+    "r0_ohm_per_km": 0.0644193920138465,
+    "l0_h_per_km": 0.0031238587666339943,
+    "c0_f_per_km": 6.87517850121633e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L16_21_1",
+   "buses": [
+    "B16",
+    "B21"
+   ],
+   "length_km": 45.038513214566464,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.021141905716639802,
+    "l1_h_per_km": 0.0009463609128335694,
+    "c1_f_per_km": 1.2607996203579025e-08,
+    "r0_ohm_per_km": 0.042283811433279604,
+    "l0_h_per_km": 0.002839082738500708,
+    "c0_f_per_km": 7.564797722147414e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L16_24_1",
+   "buses": [
+    "B16",
+    "B24"
+   ],
+   "length_km": 15.381472433990838,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.02321461755578846,
+    "l1_h_per_km": 0.0012110474834639224,
+    "c1_f_per_km": 9.852392213469042e-09,
+    "r0_ohm_per_km": 0.04642923511157692,
+    "l0_h_per_km": 0.003633142450391767,
+    "c0_f_per_km": 5.911435328081425e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L17_18_1",
+   "buses": [
+    "B17",
+    "B18"
+   ],
+   "length_km": 25.254965134444088,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.032990542476088035,
+    "l1_h_per_km": 0.001025118687259307,
+    "c1_f_per_km": 1.163934961338098e-08,
+    "r0_ohm_per_km": 0.06598108495217607,
+    "l0_h_per_km": 0.0030753560617779213,
+    "c0_f_per_km": 6.983609768028586e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L17_27_1",
+   "buses": [
+    "B17",
+    "B27"
+   ],
+   "length_km": 57.279408021905084,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.02701363462779266,
+    "l1_h_per_km": 0.0009535745543169819,
+    "c1_f_per_km": 1.2512618695837131e-08,
+    "r0_ohm_per_km": 0.05402726925558532,
+    "l0_h_per_km": 0.002860723662950946,
+    "c0_f_per_km": 7.507571217502277e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L1_2_1",
+   "buses": [
+    "B1",
+    "B2"
+   ],
+   "length_km": 130.13188834616753,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.032012714584746804,
+    "l1_h_per_km": 0.0009971607174421256,
+    "c1_f_per_km": 1.1965688767632121e-08,
+    "r0_ohm_per_km": 0.06402542916949361,
+    "l0_h_per_km": 0.0029914821523263765,
+    "c0_f_per_km": 7.179413260579272e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L1_39_1",
+   "buses": [
+    "B1",
+    "B39"
+   ],
+   "length_km": 105.15213266679525,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.01131931392938695,
+    "l1_h_per_km": 0.0007506353184461992,
+    "c1_f_per_km": 1.5895488132532384e-08,
+    "r0_ohm_per_km": 0.0226386278587739,
+    "l0_h_per_km": 0.0022519059553385984,
+    "c0_f_per_km": 9.53729287951943e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L21_22_1",
+   "buses": [
+    "B21",
+    "B22"
+   ],
+   "length_km": 46.01772578863455,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.02069202646766117,
+    "l1_h_per_km": 0.0009605278360173432,
+    "c1_f_per_km": 1.242203957950239e-08,
+    "r0_ohm_per_km": 0.04138405293532234,
+    "l0_h_per_km": 0.0028815835080520298,
+    "c0_f_per_km": 7.453223747701434e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L22_23_1",
+   "buses": [
+    "B22",
+    "B23"
+   ],
+   "length_km": 32.327261341980915,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.022091261998509863,
+    "l1_h_per_km": 0.0009375822789869301,
+    "c1_f_per_km": 1.2726045557424143e-08,
+    "r0_ohm_per_km": 0.044182523997019725,
+    "l0_h_per_km": 0.0028127468369607903,
+    "c0_f_per_km": 7.635627334454485e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L23_24_1",
+   "buses": [
+    "B23",
+    "B24"
+   ],
+   "length_km": 86.31873605509047,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.030335824175284326,
+    "l1_h_per_km": 0.001280177067872797,
+    "c1_f_per_km": 9.320362858903209e-09,
+    "r0_ohm_per_km": 0.06067164835056865,
+    "l0_h_per_km": 0.0038405312036183916,
+    "c0_f_per_km": 5.592217715341925e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L25_26_1",
+   "buses": [
+    "B25",
+    "B26"
+   ],
+   "length_km": 98.85016374166806,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.038531043913632754,
+    "l1_h_per_km": 0.0010316495680909427,
+    "c1_f_per_km": 1.1565666448444066e-08,
+    "r0_ohm_per_km": 0.07706208782726551,
+    "l0_h_per_km": 0.0030949487042728286,
+    "c0_f_per_km": 6.93939986906644e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L26_27_1",
+   "buses": [
+    "B26",
+    "B27"
+   ],
+   "length_km": 45.57424928702926,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.03656341083108646,
+    "l1_h_per_km": 0.0010183683247617522,
+    "c1_f_per_km": 1.1716502277319611e-08,
+    "r0_ohm_per_km": 0.07312682166217292,
+    "l0_h_per_km": 0.0030551049742852565,
+    "c0_f_per_km": 7.029901366391766e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L26_28_1",
+   "buses": [
+    "B26",
+    "B28"
+   ],
+   "length_km": 147.67588872191433,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.03465748568906702,
+    "l1_h_per_km": 0.001013388146143208,
+    "c1_f_per_km": 1.1774081670119599e-08,
+    "r0_ohm_per_km": 0.06931497137813404,
+    "l0_h_per_km": 0.0030401644384296244,
+    "c0_f_per_km": 7.064449002071758e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L26_29_1",
+   "buses": [
+    "B26",
+    "B29"
+   ],
+   "length_km": 194.74447500508793,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.034837573696623485,
+    "l1_h_per_km": 0.001013262437709397,
+    "c1_f_per_km": 1.1775542398664575e-08,
+    "r0_ohm_per_km": 0.06967514739324697,
+    "l0_h_per_km": 0.0030397873131281904,
+    "c0_f_per_km": 7.065325439198745e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L28_29_1",
+   "buses": [
+    "B28",
+    "B29"
+   ],
+   "length_km": 47.087496021400135,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.03538837570047649,
+    "l1_h_per_km": 0.0010124612774158527,
+    "c1_f_per_km": 1.1784860381697796e-08,
+    "r0_ohm_per_km": 0.07077675140095298,
+    "l0_h_per_km": 0.003037383832247558,
+    "c0_f_per_km": 7.070916229018679e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L2_25_1",
+   "buses": [
+    "B2",
+    "B25"
+   ],
+   "length_km": 27.210912314088148,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.3061914978751495,
+    "l1_h_per_km": 0.000997843470495376,
+    "c1_f_per_km": 1.1957501501009745e-08,
+    "r0_ohm_per_km": 0.612382995750299,
+    "l0_h_per_km": 0.0029935304114861276,
+    "c0_f_per_km": 7.174500900605846e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L2_3_1",
+   "buses": [
+    "B2",
+    "B3"
+   ],
+   "length_km": 47.85655200233993,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.03233256336403725,
+    "l1_h_per_km": 0.0009961909995063925,
+    "c1_f_per_km": 1.197733647677336e-08,
+    "r0_ohm_per_km": 0.0646651267280745,
+    "l0_h_per_km": 0.002988572998519177,
+    "c0_f_per_km": 7.1864018860640164e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L3_18_1",
+   "buses": [
+    "B3",
+    "B18"
+   ],
+   "length_km": 40.94936016091509,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.03197302704743267,
+    "l1_h_per_km": 0.0010254431589816673,
+    "c1_f_per_km": 1.1635666679048508e-08,
+    "r0_ohm_per_km": 0.06394605409486534,
+    "l0_h_per_km": 0.003076329476945001,
+    "c0_f_per_km": 6.981400007429105e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L3_4_1",
+   "buses": [
+    "B3",
+    "B4"
+   ],
+   "length_km": 52.734648952077386,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.029341714238130825,
+    "l1_h_per_km": 0.0012752361501729773,
+    "c1_f_per_km": 9.356474716155724e-09,
+    "r0_ohm_per_km": 0.05868342847626165,
+    "l0_h_per_km": 0.0038257084505189318,
+    "c0_f_per_km": 5.613884829693435e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L4_14_1",
+   "buses": [
+    "B4",
+    "B14"
+   ],
+   "length_km": 32.42398023453647,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.029367153357247676,
+    "l1_h_per_km": 0.001256118048236124,
+    "c1_f_per_km": 9.498880151412578e-09,
+    "r0_ohm_per_km": 0.05873430671449535,
+    "l0_h_per_km": 0.003768354144708372,
+    "c0_f_per_km": 5.699328090847546e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L4_5_1",
+   "buses": [
+    "B4",
+    "B5"
+   ],
+   "length_km": 31.82721896949276,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.02991778832177292,
+    "l1_h_per_km": 0.0012697503727432376,
+    "c1_f_per_km": 9.39689804574997e-09,
+    "r0_ohm_per_km": 0.05983557664354584,
+    "l0_h_per_km": 0.003809251118229713,
+    "c0_f_per_km": 5.638138827449981e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L5_6_1",
+   "buses": [
+    "B5",
+    "B6"
+   ],
+   "length_km": 8.157347961631354,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.029182278495374296,
+    "l1_h_per_km": 0.0010063091725316796,
+    "c1_f_per_km": 1.18569075209792e-08,
+    "r0_ohm_per_km": 0.05836455699074859,
+    "l0_h_per_km": 0.003018927517595039,
+    "c0_f_per_km": 7.11414451258752e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L5_8_1",
+   "buses": [
+    "B5",
+    "B8"
+   ],
+   "length_km": 31.222641277767575,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.030497099573636152,
+    "l1_h_per_km": 0.0011325449676589832,
+    "c1_f_per_km": 1.053531218357234e-08,
+    "r0_ohm_per_km": 0.060994199147272304,
+    "l0_h_per_km": 0.0033976349029769494,
+    "c0_f_per_km": 6.321187310143404e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L6_11_1",
+   "buses": [
+    "B6",
+    "B11"
+   ],
+   "length_km": 25.91644917505832,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.032148501300164126,
+    "l1_h_per_km": 0.0009989538509124344,
+    "c1_f_per_km": 1.1944210220845454e-08,
+    "r0_ohm_per_km": 0.06429700260032825,
+    "l0_h_per_km": 0.0029968615527373034,
+    "c0_f_per_km": 7.1665261325072725e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L6_7_1",
+   "buses": [
+    "B6",
+    "B7"
+   ],
+   "length_km": 24.759996829454384,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.028842895454269615,
+    "l1_h_per_km": 0.0011731250649609408,
+    "c1_f_per_km": 1.0170880456482692e-08,
+    "r0_ohm_per_km": 0.05768579090853923,
+    "l0_h_per_km": 0.0035193751948828225,
+    "c0_f_per_km": 6.102528273889615e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L7_8_1",
+   "buses": [
+    "B7",
+    "B8"
+   ],
+   "length_km": 14.546002789073224,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.03273064132488964,
+    "l1_h_per_km": 0.0009984383101729428,
+    "c1_f_per_km": 1.1950377579316335e-08,
+    "r0_ohm_per_km": 0.06546128264977928,
+    "l0_h_per_km": 0.002995314930518828,
+    "c0_f_per_km": 7.170226547589801e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L8_9_1",
+   "buses": [
+    "B8",
+    "B9"
+   ],
+   "length_km": 90.23832304982523,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.030337166155985012,
+    "l1_h_per_km": 0.0012700554441916203,
+    "c1_f_per_km": 9.39464088027721e-09,
+    "r0_ohm_per_km": 0.060674332311970024,
+    "l0_h_per_km": 0.0038101663325748607,
+    "c0_f_per_km": 5.636784528166326e-09
+   }
+  },
+  {
+   "type": "bergeron_line",
+   "name": "L9_39_1",
+   "buses": [
+    "B9",
+    "B39"
+   ],
+   "length_km": 133.00809602050734,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.008948703391833276,
+    "l1_h_per_km": 0.0005934293246139483,
+    "c1_f_per_km": 2.01063788075915e-08,
+    "r0_ohm_per_km": 0.017897406783666553,
+    "l0_h_per_km": 0.001780287973841845,
+    "c0_f_per_km": 1.20638272845549e-08
+   }
+  },
+  {
+   "type": "three_phase_transformer",
+   "name": "T10_32_0_1",
+   "buses": [
+    "B10",
+    "B32"
+   ],
+   "vector_group": "YNd1",
+   "rated_voltage_kv": [
+    369.15000000000003,
+    22.0
+   ],
+   "rated_power_mva": 900.0,
+   "rated_frequency_hz": 60.0,
+   "impedance_percent": 18.0,
+   "resistance_percent": 0.0,
+   "no_load_current_percent": 1.180135907692415,
+   "no_load_loss_kw": 2576.0250000000005
+  },
+  {
+   "type": "three_phase_transformer",
+   "name": "T12_11_0_1",
+   "buses": [
+    "B11",
+    "B12"
+   ],
+   "vector_group": "YNyn0",
+   "rated_voltage_kv": [
+    345.0,
+    154.924
+   ],
+   "rated_power_mva": 500.0,
+   "rated_frequency_hz": 60.0,
+   "impedance_percent": 21.764707670906123,
+   "resistance_percent": 0.7999999999999999,
+   "no_load_current_percent": 1.043182831231899,
+   "no_load_loss_kw": 1265.045
+  },
+  {
+   "type": "three_phase_transformer",
+   "name": "T12_13_0_1",
+   "buses": [
+    "B13",
+    "B12"
+   ],
+   "vector_group": "YNyn0",
+   "rated_voltage_kv": [
+    345.0,
+    154.924
+   ],
+   "rated_power_mva": 500.0,
+   "rated_frequency_hz": 60.0,
+   "impedance_percent": 21.764707670906123,
+   "resistance_percent": 0.7999999999999999,
+   "no_load_current_percent": 1.043182831231899,
+   "no_load_loss_kw": 1265.045
+  },
+  {
+   "type": "three_phase_transformer",
+   "name": "T19_20_0_1",
+   "buses": [
+    "B19",
+    "B20"
+   ],
+   "vector_group": "YNyn0",
+   "rated_voltage_kv": [
+    365.70000000000005,
+    345.0
+   ],
+   "rated_power_mva": 900.0,
+   "rated_frequency_hz": 60.0,
+   "impedance_percent": 12.435967996099059,
+   "resistance_percent": 0.63,
+   "no_load_current_percent": 1.1581803702360012,
+   "no_load_loss_kw": 2528.1000000000013
+  },
+  {
+   "type": "three_phase_transformer",
+   "name": "T19_33_0_1",
+   "buses": [
+    "B19",
+    "B33"
+   ],
+   "vector_group": "YNd1",
+   "rated_voltage_kv": [
+    369.15000000000003,
+    22.0
+   ],
+   "rated_power_mva": 900.0,
+   "rated_frequency_hz": 60.0,
+   "impedance_percent": 12.795518746811322,
+   "resistance_percent": 0.63,
+   "no_load_current_percent": 1.180135907692415,
+   "no_load_loss_kw": 2576.0250000000005
+  },
+  {
+   "type": "three_phase_transformer",
+   "name": "T20_34_0_1",
+   "buses": [
+    "B20",
+    "B34"
+   ],
+   "vector_group": "YNd1",
+   "rated_voltage_kv": [
+    348.10499999999996,
+    22.0
+   ],
+   "rated_power_mva": 900.0,
+   "rated_frequency_hz": 60.0,
+   "impedance_percent": 16.220237359545635,
+   "resistance_percent": 0.8099999999999999,
+   "no_load_current_percent": 1.0494138746086128,
+   "no_load_loss_kw": 2290.6822499999985
+  },
+  {
+   "type": "three_phase_transformer",
+   "name": "T22_35_0_1",
+   "buses": [
+    "B22",
+    "B35"
+   ],
+   "vector_group": "YNd1",
+   "rated_voltage_kv": [
+    353.62499999999994,
+    22.0
+   ],
+   "rated_power_mva": 900.0,
+   "rated_frequency_hz": 60.0,
+   "impedance_percent": 12.870000000000001,
+   "resistance_percent": 0.0,
+   "no_load_current_percent": 1.082959461978638,
+   "no_load_loss_kw": 2363.9062499999986
+  },
+  {
+   "type": "three_phase_transformer",
+   "name": "T23_36_0_1",
+   "buses": [
+    "B23",
+    "B36"
+   ],
+   "vector_group": "YNd1",
+   "rated_voltage_kv": [
+    345.0,
+    22.0
+   ],
+   "rated_power_mva": 900.0,
+   "rated_frequency_hz": 60.0,
+   "impedance_percent": 24.484135680068434,
+   "resistance_percent": 0.45,
+   "no_load_current_percent": 1.030776406404415,
+   "no_load_loss_kw": 2249.9999999999995
+  },
+  {
+   "type": "three_phase_transformer",
+   "name": "T25_37_0_1",
+   "buses": [
+    "B25",
+    "B37"
+   ],
+   "vector_group": "YNd1",
+   "rated_voltage_kv": [
+    353.62499999999994,
+    22.0
+   ],
+   "rated_power_mva": 900.0,
+   "rated_frequency_hz": 60.0,
+   "impedance_percent": 20.886981591412386,
+   "resistance_percent": 0.5399999999999999,
+   "no_load_current_percent": 1.082959461978638,
+   "no_load_loss_kw": 2363.9062499999986
+  },
+  {
+   "type": "three_phase_transformer",
+   "name": "T29_38_0_1",
+   "buses": [
+    "B29",
+    "B38"
+   ],
+   "vector_group": "YNd1",
+   "rated_voltage_kv": [
+    353.62499999999994,
+    22.0
+   ],
+   "rated_power_mva": 1200.0,
+   "rated_frequency_hz": 60.0,
+   "impedance_percent": 18.744599222175967,
+   "resistance_percent": 0.96,
+   "no_load_current_percent": 1.0829594619786382,
+   "no_load_loss_kw": 3151.874999999999
+  },
+  {
+   "type": "three_phase_transformer",
+   "name": "T2_30_0_1",
+   "buses": [
+    "B2",
+    "B30"
+   ],
+   "vector_group": "YNyn0",
+   "rated_voltage_kv": [
+    353.62499999999994,
+    22.0
+   ],
+   "rated_power_mva": 900.0,
+   "rated_frequency_hz": 60.0,
+   "impedance_percent": 16.290000000000003,
+   "resistance_percent": 0.0,
+   "no_load_current_percent": 1.082959461978638,
+   "no_load_loss_kw": 2363.9062499999986
+  },
+  {
+   "type": "three_phase_transformer",
+   "name": "T6_31_0_1",
+   "buses": [
+    "B6",
+    "B31"
+   ],
+   "vector_group": "YNd1",
+   "rated_voltage_kv": [
+    368.71875000000006,
+    22.0
+   ],
+   "rated_power_mva": 900.0,
+   "rated_frequency_hz": 60.0,
+   "impedance_percent": 22.5,
+   "resistance_percent": 0.0,
+   "no_load_current_percent": 1.177380191393418,
+   "no_load_loss_kw": 2570.0097656250005
+  },
+  {
+   "type": "three_phase_load",
+   "name": "LD12_1",
+   "bus": "B12",
+   "rated_voltage_kv": 154.0,
+   "rated_frequency_hz": 60.0,
+   "active_power_mw": 7.5,
+   "reactive_power_mvar": 88.0
+  },
+  {
+   "type": "three_phase_load",
+   "name": "LD15_1",
+   "bus": "B15",
+   "rated_voltage_kv": 345.0,
+   "rated_frequency_hz": 60.0,
+   "active_power_mw": 320.0,
+   "reactive_power_mvar": 153.0
+  },
+  {
+   "type": "three_phase_load",
+   "name": "LD16_1",
+   "bus": "B16",
+   "rated_voltage_kv": 345.0,
+   "rated_frequency_hz": 60.0,
+   "active_power_mw": 329.4,
+   "reactive_power_mvar": 32.3
+  },
+  {
+   "type": "three_phase_load",
+   "name": "LD18_1",
+   "bus": "B18",
+   "rated_voltage_kv": 345.0,
+   "rated_frequency_hz": 60.0,
+   "active_power_mw": 158.0,
+   "reactive_power_mvar": 30.0
+  },
+  {
+   "type": "three_phase_load",
+   "name": "LD20_1",
+   "bus": "B20",
+   "rated_voltage_kv": 345.0,
+   "rated_frequency_hz": 60.0,
+   "active_power_mw": 628.0,
+   "reactive_power_mvar": 103.0
+  },
+  {
+   "type": "three_phase_load",
+   "name": "LD21_1",
+   "bus": "B21",
+   "rated_voltage_kv": 345.0,
+   "rated_frequency_hz": 60.0,
+   "active_power_mw": 274.0,
+   "reactive_power_mvar": 115.0
+  },
+  {
+   "type": "three_phase_load",
+   "name": "LD23_1",
+   "bus": "B23",
+   "rated_voltage_kv": 345.0,
+   "rated_frequency_hz": 60.0,
+   "active_power_mw": 247.5,
+   "reactive_power_mvar": 84.6
+  },
+  {
+   "type": "three_phase_load",
+   "name": "LD24_1",
+   "bus": "B24",
+   "rated_voltage_kv": 345.0,
+   "rated_frequency_hz": 60.0,
+   "active_power_mw": 308.6,
+   "reactive_power_mvar": -92.2
+  },
+  {
+   "type": "three_phase_load",
+   "name": "LD25_1",
+   "bus": "B25",
+   "rated_voltage_kv": 345.0,
+   "rated_frequency_hz": 60.0,
+   "active_power_mw": 224.0,
+   "reactive_power_mvar": 47.2
+  },
+  {
+   "type": "three_phase_load",
+   "name": "LD26_1",
+   "bus": "B26",
+   "rated_voltage_kv": 345.0,
+   "rated_frequency_hz": 60.0,
+   "active_power_mw": 139.0,
+   "reactive_power_mvar": 17.0
+  },
+  {
+   "type": "three_phase_load",
+   "name": "LD27_1",
+   "bus": "B27",
+   "rated_voltage_kv": 345.0,
+   "rated_frequency_hz": 60.0,
+   "active_power_mw": 281.0,
+   "reactive_power_mvar": 75.5
+  },
+  {
+   "type": "three_phase_load",
+   "name": "LD28_1",
+   "bus": "B28",
+   "rated_voltage_kv": 345.0,
+   "rated_frequency_hz": 60.0,
+   "active_power_mw": 206.0,
+   "reactive_power_mvar": 27.6
+  },
+  {
+   "type": "three_phase_load",
+   "name": "LD29_1",
+   "bus": "B29",
+   "rated_voltage_kv": 345.0,
+   "rated_frequency_hz": 60.0,
+   "active_power_mw": 283.5,
+   "reactive_power_mvar": 26.9
+  },
+  {
+   "type": "three_phase_load",
+   "name": "LD31_1",
+   "bus": "B31",
+   "rated_voltage_kv": 22.0,
+   "rated_frequency_hz": 60.0,
+   "active_power_mw": 9.2,
+   "reactive_power_mvar": 4.6
+  },
+  {
+   "type": "three_phase_load",
+   "name": "LD39_1",
+   "bus": "B39",
+   "rated_voltage_kv": 345.0,
+   "rated_frequency_hz": 60.0,
+   "active_power_mw": 1104.0,
+   "reactive_power_mvar": 250.0
+  },
+  {
+   "type": "three_phase_load",
+   "name": "LD3_1",
+   "bus": "B3",
+   "rated_voltage_kv": 345.0,
+   "rated_frequency_hz": 60.0,
+   "active_power_mw": 322.0,
+   "reactive_power_mvar": 2.4
+  },
+  {
+   "type": "three_phase_load",
+   "name": "LD4_1",
+   "bus": "B4",
+   "rated_voltage_kv": 345.0,
+   "rated_frequency_hz": 60.0,
+   "active_power_mw": 500.0,
+   "reactive_power_mvar": 184.0
+  },
+  {
+   "type": "three_phase_load",
+   "name": "LD7_1",
+   "bus": "B7",
+   "rated_voltage_kv": 345.0,
+   "rated_frequency_hz": 60.0,
+   "active_power_mw": 233.8,
+   "reactive_power_mvar": 84.0
+  },
+  {
+   "type": "three_phase_load",
+   "name": "LD8_1",
+   "bus": "B8",
+   "rated_voltage_kv": 345.0,
+   "rated_frequency_hz": 60.0,
+   "active_power_mw": 522.0,
+   "reactive_power_mvar": 176.0
+  },
+  {
+   "type": "three_phase_source",
+   "name": "SW31_1",
+   "bus": "B31",
+   "line_voltage_rms_v": 27467.026375688798,
+   "frequency_hz": 60.0,
+   "angle_deg": 16.817527393421706,
+   "impedance": {
+    "type": "sequence",
+    "r1_ohm": 0.0007934426229508197,
+    "l1_h": 0.0008948433623694118,
+    "r0_ohm": 0.0007934426229508197,
+    "l0_h": 0.0008948433623694118
+   }
+  },
+  {
+   "type": "synchronous_machine",
+   "name": "G32_1",
+   "bus": "B32",
+   "rated_power_mva": 720.0,
+   "rated_voltage_kv": 22.0,
+   "frequency_hz": 60.0,
+   "xd_pu": 1.7964,
+   "xq_pu": 1.7064,
+   "xd_transient_pu": 0.38232,
+   "xq_transient_pu": 0.6307,
+   "xd_subtransient_pu": 0.27,
+   "xq_subtransient_pu": 0.27,
+   "xl_pu": 0.2189,
+   "ra_pu": 0.001,
+   "td0_transient_s": 5.7,
+   "td0_subtransient_s": 0.032,
+   "tq0_transient_s": 1.5,
+   "tq0_subtransient_s": 0.032,
+   "inertia_h_s": 3.0,
+   "damping_pu": 0.0,
+   "operating_point": {
+    "active_power_mw": 650.0,
+    "reactive_power_mvar": 295.144696,
+    "voltage_pu": 1.0,
+    "angle_deg": 2.590401
+   },
+   "field_voltage_signal": "G32_1_EFO",
+   "mechanical_torque_signal": "G32_1_TMO"
+  },
+  {
+   "type": "synchronous_machine",
+   "name": "G33_1",
+   "bus": "B33",
+   "rated_power_mva": 700.0,
+   "rated_voltage_kv": 22.0,
+   "frequency_hz": 60.0,
+   "xd_pu": 1.7816,
+   "xq_pu": 1.7544,
+   "xd_transient_pu": 0.29648,
+   "xq_transient_pu": 1.1288,
+   "xd_subtransient_pu": 0.2543,
+   "xq_subtransient_pu": 0.2543,
+   "xl_pu": 0.2006,
+   "ra_pu": 0.001,
+   "td0_transient_s": 5.67,
+   "td0_subtransient_s": 0.041,
+   "tq0_transient_s": 1.5,
+   "tq0_subtransient_s": 0.213,
+   "inertia_h_s": 3.0,
+   "damping_pu": 0.0,
+   "operating_point": {
+    "active_power_mw": 632.0,
+    "reactive_power_mvar": 203.760257,
+    "voltage_pu": 1.0,
+    "angle_deg": 4.885022
+   },
+   "field_voltage_signal": "G33_1_EFO",
+   "mechanical_torque_signal": "G33_1_TMO"
+  },
+  {
+   "type": "synchronous_machine",
+   "name": "G34_1",
+   "bus": "B34",
+   "rated_power_mva": 560.0,
+   "rated_voltage_kv": 22.0,
+   "frequency_hz": 60.0,
+   "xd_pu": 1.818,
+   "xq_pu": 1.748,
+   "xd_transient_pu": 0.7128,
+   "xq_transient_pu": 0.8964,
+   "xd_subtransient_pu": 0.459,
+   "xq_subtransient_pu": 0.459,
+   "xl_pu": 0.2916,
+   "ra_pu": 0.001,
+   "td0_transient_s": 5.4,
+   "td0_subtransient_s": 0.035,
+   "tq0_transient_s": 0.44,
+   "tq0_subtransient_s": 0.14,
+   "inertia_h_s": 3.0,
+   "damping_pu": 0.0,
+   "operating_point": {
+    "active_power_mw": 508.0,
+    "reactive_power_mvar": 157.160554,
+    "voltage_pu": 1.0,
+    "angle_deg": 4.174721
+   },
+   "field_voltage_signal": "G34_1_EFO",
+   "mechanical_torque_signal": "G34_1_TMO"
+  },
+  {
+   "type": "synchronous_machine",
+   "name": "G35_1",
+   "bus": "B35",
+   "rated_power_mva": 720.0,
+   "rated_voltage_kv": 22.0,
+   "frequency_hz": 60.0,
+   "xd_pu": 1.8288,
+   "xq_pu": 1.7352,
+   "xd_transient_pu": 0.36,
+   "xq_transient_pu": 0.5861,
+   "xd_subtransient_pu": 0.2441,
+   "xq_subtransient_pu": 0.2441,
+   "xl_pu": 0.1613,
+   "ra_pu": 0.001,
+   "td0_transient_s": 7.3,
+   "td0_subtransient_s": 0.032,
+   "tq0_transient_s": 0.4,
+   "tq0_subtransient_s": 0.055,
+   "inertia_h_s": 3.0,
+   "damping_pu": 0.0,
+   "operating_point": {
+    "active_power_mw": 650.0,
+    "reactive_power_mvar": 172.248383,
+    "voltage_pu": 1.0,
+    "angle_deg": 7.026045
+   },
+   "field_voltage_signal": "G35_1_EFO",
+   "mechanical_torque_signal": "G35_1_TMO"
+  },
+  {
+   "type": "synchronous_machine",
+   "name": "G36_1",
+   "bus": "B36",
+   "rated_power_mva": 610.0,
+   "rated_voltage_kv": 22.0,
+   "frequency_hz": 60.0,
+   "xd_pu": 1.7995,
+   "xq_pu": 1.7812,
+   "xd_transient_pu": 0.2989,
+   "xq_transient_pu": 1.1346,
+   "xd_subtransient_pu": 0.2471,
+   "xq_subtransient_pu": 0.2471,
+   "xl_pu": 0.1964,
+   "ra_pu": 0.001,
+   "td0_transient_s": 5.66,
+   "td0_subtransient_s": 0.014,
+   "tq0_transient_s": 1.5,
+   "tq0_subtransient_s": 0.207,
+   "inertia_h_s": 3.0,
+   "damping_pu": 0.0,
+   "operating_point": {
+    "active_power_mw": 560.0,
+    "reactive_power_mvar": 43.072666,
+    "voltage_pu": 1.0,
+    "angle_deg": 10.14603
+   },
+   "field_voltage_signal": "G36_1_EFO",
+   "mechanical_torque_signal": "G36_1_TMO"
+  },
+  {
+   "type": "synchronous_machine",
+   "name": "G37_1",
+   "bus": "B37",
+   "rated_power_mva": 600.0,
+   "rated_voltage_kv": 22.0,
+   "frequency_hz": 60.0,
+   "xd_pu": 1.74,
+   "xq_pu": 1.68,
+   "xd_transient_pu": 0.342,
+   "xq_transient_pu": 0.5466,
+   "xd_subtransient_pu": 0.2154,
+   "xq_subtransient_pu": 0.2154,
+   "xl_pu": 0.168,
+   "ra_pu": 0.001,
+   "td0_transient_s": 6.7,
+   "td0_subtransient_s": 0.035,
+   "tq0_transient_s": 0.41,
+   "tq0_subtransient_s": 0.058,
+   "inertia_h_s": 3.0,
+   "damping_pu": 0.0,
+   "operating_point": {
+    "active_power_mw": 540.0,
+    "reactive_power_mvar": 22.971537,
+    "voltage_pu": 1.0,
+    "angle_deg": 2.90559
+   },
+   "field_voltage_signal": "G37_1_EFO",
+   "mechanical_torque_signal": "G37_1_TMO"
+  },
+  {
+   "type": "synchronous_machine",
+   "name": "G38_1",
+   "bus": "B38",
+   "rated_power_mva": 920.0,
+   "rated_voltage_kv": 22.0,
+   "frequency_hz": 60.0,
+   "xd_pu": 1.8743,
+   "xq_pu": 1.8245,
+   "xd_transient_pu": 0.5073,
+   "xq_transient_pu": 0.5224,
+   "xd_subtransient_pu": 0.3382,
+   "xq_subtransient_pu": 0.3382,
+   "xl_pu": 0.2652,
+   "ra_pu": 0.001,
+   "td0_transient_s": 4.79,
+   "td0_subtransient_s": 0.04,
+   "tq0_transient_s": 1.96,
+   "tq0_subtransient_s": 0.04,
+   "inertia_h_s": 3.0,
+   "damping_pu": 0.0,
+   "operating_point": {
+    "active_power_mw": 830.0,
+    "reactive_power_mvar": 42.670867,
+    "voltage_pu": 1.0,
+    "angle_deg": 8.092735
+   },
+   "field_voltage_signal": "G38_1_EFO",
+   "mechanical_torque_signal": "G38_1_TMO"
+  },
+  {
+   "type": "synchronous_machine",
+   "name": "G39_1",
+   "bus": "B39",
+   "rated_power_mva": 10000.0,
+   "rated_voltage_kv": 345.0,
+   "frequency_hz": 60.0,
+   "xd_pu": 2.0,
+   "xq_pu": 1.9,
+   "xd_transient_pu": 0.6,
+   "xq_transient_pu": 0.8,
+   "xd_subtransient_pu": 0.4,
+   "xq_subtransient_pu": 0.4,
+   "xl_pu": 0.3,
+   "ra_pu": 0.001,
+   "td0_transient_s": 7.0,
+   "td0_subtransient_s": 0.05,
+   "tq0_transient_s": 0.7,
+   "tq0_subtransient_s": 0.09,
+   "inertia_h_s": 3.0,
+   "damping_pu": 0.0,
+   "operating_point": {
+    "active_power_mw": 1000.0,
+    "reactive_power_mvar": 65.291254,
+    "voltage_pu": 1.0,
+    "angle_deg": 20.024838000000003
+   },
+   "field_voltage_signal": "G39_1_EFO",
+   "mechanical_torque_signal": "G39_1_TMO"
+  },
+  {
+   "type": "three_phase_source",
+   "name": "IBRS30_1",
+   "bus": "S30",
+   "line_voltage_rms_v": 22685.6555935603,
+   "frequency_hz": 60.0,
+   "angle_deg": 32.81387449588192,
+   "impedance": {
+    "type": "sequence",
+    "r1_ohm": 0.0,
+    "l1_h": 0.0005349374476144261,
+    "r0_ohm": 0.0,
+    "l0_h": 0.0005349374476144261
+   }
+  },
+  {
+   "type": "switch",
+   "name": "IBRS30_1_SWa",
+   "nodes": [
+    "S30.a",
+    "B30.a"
+   ],
+   "initially_closed": true,
+   "open_time_s": 0.02,
+   "open_at_current_zero": false
+  },
+  {
+   "type": "switch",
+   "name": "IBRS30_1_SWb",
+   "nodes": [
+    "S30.b",
+    "B30.b"
+   ],
+   "initially_closed": true,
+   "open_time_s": 0.02,
+   "open_at_current_zero": false
+  },
+  {
+   "type": "switch",
+   "name": "IBRS30_1_SWc",
+   "nodes": [
+    "S30.c",
+    "B30.c"
+   ],
+   "initially_closed": true,
+   "open_time_s": 0.02,
+   "open_at_current_zero": false
+  },
+  {
+   "type": "three_phase_controlled_current_source",
+   "name": "IBR30_1",
+   "bus": "B30",
+   "signals": [
+    "IBR30_1_JA",
+    "IBR30_1_JB",
+    "IBR30_1_JC"
+   ],
+   "steady_state": {
+    "current_rms_a": 0.0,
+    "angle_deg": 0.0
+   }
+  },
+  {
+   "type": "fault",
+   "name": "F16",
+   "bus": "B16",
+   "phases": [
+    "c"
+   ],
+   "ground": true,
+   "fault_resistance_ohm": 0.001,
+   "ground_resistance_ohm": 0.0,
+   "start_time_s": 12.0,
+   "clear_time_s": 12.2,
+   "clear_at_current_zero": false
+  }
+ ],
+ "controls": [
+  {
+   "type": "three_phase_measurement",
+   "name": "SWP_V",
+   "quantity": {
+    "type": "bus_voltage",
+    "bus": "B31"
+   }
+  },
+  {
+   "type": "three_phase_measurement",
+   "name": "SWP_I",
+   "quantity": {
+    "type": "branch_current",
+    "component": "SW31_1"
+   }
+  },
+  {
+   "type": "product",
+   "name": "SWP_Pa",
+   "inputs": [
+    "SWP_V.a",
+    "SWP_I.a"
+   ]
+  },
+  {
+   "type": "product",
+   "name": "SWP_Pb",
+   "inputs": [
+    "SWP_V.b",
+    "SWP_I.b"
+   ]
+  },
+  {
+   "type": "product",
+   "name": "SWP_Pc",
+   "inputs": [
+    "SWP_V.c",
+    "SWP_I.c"
+   ]
+  },
+  {
+   "type": "gain",
+   "name": "SWP_W_k0",
+   "input": "SWP_Pa",
+   "gain": 1e-06
+  },
+  {
+   "type": "gain",
+   "name": "SWP_W_k1",
+   "input": "SWP_Pb",
+   "gain": 1e-06
+  },
+  {
+   "type": "gain",
+   "name": "SWP_W_k2",
+   "input": "SWP_Pc",
+   "gain": 1e-06
+  },
+  {
+   "type": "sum",
+   "name": "SWP_W",
+   "inputs": [
+    "SWP_W_k0",
+    "SWP_W_k1",
+    "SWP_W_k2"
+   ],
+   "signs": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "measurement",
+   "name": "G32_1_EA",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G32_1",
+    "signal": "terminal_voltage_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G32_1_OMG",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G32_1",
+    "signal": "speed_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G32_1_IFD",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G32_1",
+    "signal": "field_current_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G32_1_EFS",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G32_1",
+    "signal": "initial_field_voltage_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G32_1_TGI",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G32_1",
+    "signal": "initial_mechanical_torque_pu"
+   }
+  },
+  {
+   "type": "initial_value",
+   "name": "G32_1_EAS",
+   "input": "G32_1_EA"
+  },
+  {
+   "type": "initial_value",
+   "name": "G32_1_IFD0",
+   "input": "G32_1_IFD"
+  },
+  {
+   "type": "constant",
+   "name": "G32_1_ONE",
+   "value": 1.0
+  },
+  {
+   "type": "lag",
+   "name": "G32_1_VRMS1",
+   "input": "G32_1_EA",
+   "time_constant_s": 0.008514513230710195
+  },
+  {
+   "type": "lag",
+   "name": "G32_1_VRMS",
+   "input": "G32_1_VRMS1",
+   "time_constant_s": 0.008155486769289805
+  },
+  {
+   "type": "constant",
+   "name": "G32_1_INVKA",
+   "value": 0.2
+  },
+  {
+   "type": "sum",
+   "name": "G32_1_EXL0",
+   "inputs": [
+    "G32_1_EAS",
+    "G32_1_INVKA",
+    "G32_1_VRMS"
+   ],
+   "signs": [
+    1.0,
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "limiter",
+   "name": "G32_1_EXCLIM",
+   "input": "G32_1_EXL0",
+   "minimum": -1.5,
+   "maximum": 1.5
+  },
+  {
+   "type": "lag",
+   "name": "G32_1_EXTL",
+   "input": "G32_1_EXCLIM",
+   "time_constant_s": 10.0
+  },
+  {
+   "type": "gain",
+   "name": "G32_1_EXCVA_k0",
+   "input": "G32_1_EXCLIM",
+   "gain": 0.5
+  },
+  {
+   "type": "gain",
+   "name": "G32_1_EXCVA_k1",
+   "input": "G32_1_EXTL",
+   "gain": 4.5
+  },
+  {
+   "type": "sum",
+   "name": "G32_1_EXCVA",
+   "inputs": [
+    "G32_1_EXCVA_k0",
+    "G32_1_EXCVA_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "lag",
+   "name": "G32_1_EXOL",
+   "input": "G32_1_EXCVA",
+   "time_constant_s": 0.025
+  },
+  {
+   "type": "gain",
+   "name": "G32_1_EXCOUT_k0",
+   "input": "G32_1_EXCVA",
+   "gain": 16.0
+  },
+  {
+   "type": "gain",
+   "name": "G32_1_EXCOUT_k1",
+   "input": "G32_1_EXOL",
+   "gain": -15.0
+  },
+  {
+   "type": "sum",
+   "name": "G32_1_EXCOUT",
+   "inputs": [
+    "G32_1_EXCOUT_k0",
+    "G32_1_EXCOUT_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "quotient",
+   "name": "G32_1_IFDN0",
+   "inputs": [
+    "G32_1_IFD",
+    "G32_1_IFD0"
+   ]
+  },
+  {
+   "type": "delay",
+   "name": "G32_1_IFDN",
+   "input": "G32_1_IFDN0",
+   "delay_s": 1e-05,
+   "initial_output": 1.0
+  },
+  {
+   "type": "gain",
+   "name": "G32_1_EFU_k0",
+   "input": "G32_1_VRMS",
+   "gain": 4.5
+  },
+  {
+   "type": "gain",
+   "name": "G32_1_EFU_k1",
+   "input": "G32_1_IFDN",
+   "gain": -0.038
+  },
+  {
+   "type": "sum",
+   "name": "G32_1_EFU",
+   "inputs": [
+    "G32_1_EFU_k0",
+    "G32_1_EFU_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "gain",
+   "name": "G32_1_EFL",
+   "input": "G32_1_VRMS",
+   "gain": -4.0
+  },
+  {
+   "type": "function",
+   "name": "G32_1_EFD1",
+   "function": "max",
+   "inputs": [
+    "G32_1_EFL",
+    "G32_1_EXCOUT"
+   ]
+  },
+  {
+   "type": "function",
+   "name": "G32_1_EFD",
+   "function": "min",
+   "inputs": [
+    "G32_1_EFU",
+    "G32_1_EFD1"
+   ]
+  },
+  {
+   "type": "product",
+   "name": "G32_1_EFO",
+   "inputs": [
+    "G32_1_EFD",
+    "G32_1_EFS"
+   ]
+  },
+  {
+   "type": "sum",
+   "name": "G32_1_DW0",
+   "inputs": [
+    "G32_1_ONE",
+    "G32_1_OMG"
+   ],
+   "signs": [
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "lag",
+   "name": "G32_1_DW1",
+   "input": "G32_1_DW0",
+   "time_constant_s": 0.008514513230710195
+  },
+  {
+   "type": "lag",
+   "name": "G32_1_DW",
+   "input": "G32_1_DW1",
+   "time_constant_s": 0.008155486769289805
+  },
+  {
+   "type": "lag",
+   "name": "G32_1_DPWG",
+   "input": "G32_1_DW",
+   "time_constant_s": 0.1,
+   "gain": 5.219996763602007
+  },
+  {
+   "type": "sum",
+   "name": "G32_1_PM0",
+   "inputs": [
+    "G32_1_ONE",
+    "G32_1_DPWG"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "constant",
+   "name": "G32_1_PMAX",
+   "value": 1.2
+  },
+  {
+   "type": "function",
+   "name": "G32_1_PMECH",
+   "function": "min",
+   "inputs": [
+    "G32_1_PMAX",
+    "G32_1_PM0"
+   ]
+  },
+  {
+   "type": "product",
+   "name": "G32_1_TGP",
+   "inputs": [
+    "G32_1_TGI",
+    "G32_1_PMECH"
+   ]
+  },
+  {
+   "type": "quotient",
+   "name": "G32_1_TMO",
+   "inputs": [
+    "G32_1_TGP",
+    "G32_1_OMG"
+   ]
+  },
+  {
+   "type": "measurement",
+   "name": "G32_1_P",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G32_1",
+    "signal": "active_power_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G33_1_EA",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G33_1",
+    "signal": "terminal_voltage_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G33_1_OMG",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G33_1",
+    "signal": "speed_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G33_1_IFD",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G33_1",
+    "signal": "field_current_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G33_1_EFS",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G33_1",
+    "signal": "initial_field_voltage_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G33_1_TGI",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G33_1",
+    "signal": "initial_mechanical_torque_pu"
+   }
+  },
+  {
+   "type": "initial_value",
+   "name": "G33_1_EAS",
+   "input": "G33_1_EA"
+  },
+  {
+   "type": "initial_value",
+   "name": "G33_1_IFD0",
+   "input": "G33_1_IFD"
+  },
+  {
+   "type": "constant",
+   "name": "G33_1_ONE",
+   "value": 1.0
+  },
+  {
+   "type": "lag",
+   "name": "G33_1_VRMS1",
+   "input": "G33_1_EA",
+   "time_constant_s": 0.008514513230710195
+  },
+  {
+   "type": "lag",
+   "name": "G33_1_VRMS",
+   "input": "G33_1_VRMS1",
+   "time_constant_s": 0.008155486769289805
+  },
+  {
+   "type": "constant",
+   "name": "G33_1_INVKA",
+   "value": 0.2
+  },
+  {
+   "type": "sum",
+   "name": "G33_1_EXL0",
+   "inputs": [
+    "G33_1_EAS",
+    "G33_1_INVKA",
+    "G33_1_VRMS"
+   ],
+   "signs": [
+    1.0,
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "limiter",
+   "name": "G33_1_EXCLIM",
+   "input": "G33_1_EXL0",
+   "minimum": -1.5,
+   "maximum": 1.5
+  },
+  {
+   "type": "lag",
+   "name": "G33_1_EXTL",
+   "input": "G33_1_EXCLIM",
+   "time_constant_s": 10.0
+  },
+  {
+   "type": "gain",
+   "name": "G33_1_EXCVA_k0",
+   "input": "G33_1_EXCLIM",
+   "gain": 0.5
+  },
+  {
+   "type": "gain",
+   "name": "G33_1_EXCVA_k1",
+   "input": "G33_1_EXTL",
+   "gain": 4.5
+  },
+  {
+   "type": "sum",
+   "name": "G33_1_EXCVA",
+   "inputs": [
+    "G33_1_EXCVA_k0",
+    "G33_1_EXCVA_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "lag",
+   "name": "G33_1_EXOL",
+   "input": "G33_1_EXCVA",
+   "time_constant_s": 0.025
+  },
+  {
+   "type": "gain",
+   "name": "G33_1_EXCOUT_k0",
+   "input": "G33_1_EXCVA",
+   "gain": 16.0
+  },
+  {
+   "type": "gain",
+   "name": "G33_1_EXCOUT_k1",
+   "input": "G33_1_EXOL",
+   "gain": -15.0
+  },
+  {
+   "type": "sum",
+   "name": "G33_1_EXCOUT",
+   "inputs": [
+    "G33_1_EXCOUT_k0",
+    "G33_1_EXCOUT_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "quotient",
+   "name": "G33_1_IFDN0",
+   "inputs": [
+    "G33_1_IFD",
+    "G33_1_IFD0"
+   ]
+  },
+  {
+   "type": "delay",
+   "name": "G33_1_IFDN",
+   "input": "G33_1_IFDN0",
+   "delay_s": 1e-05,
+   "initial_output": 1.0
+  },
+  {
+   "type": "gain",
+   "name": "G33_1_EFU_k0",
+   "input": "G33_1_VRMS",
+   "gain": 4.5
+  },
+  {
+   "type": "gain",
+   "name": "G33_1_EFU_k1",
+   "input": "G33_1_IFDN",
+   "gain": -0.038
+  },
+  {
+   "type": "sum",
+   "name": "G33_1_EFU",
+   "inputs": [
+    "G33_1_EFU_k0",
+    "G33_1_EFU_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "gain",
+   "name": "G33_1_EFL",
+   "input": "G33_1_VRMS",
+   "gain": -4.0
+  },
+  {
+   "type": "function",
+   "name": "G33_1_EFD1",
+   "function": "max",
+   "inputs": [
+    "G33_1_EFL",
+    "G33_1_EXCOUT"
+   ]
+  },
+  {
+   "type": "function",
+   "name": "G33_1_EFD",
+   "function": "min",
+   "inputs": [
+    "G33_1_EFU",
+    "G33_1_EFD1"
+   ]
+  },
+  {
+   "type": "product",
+   "name": "G33_1_EFO",
+   "inputs": [
+    "G33_1_EFD",
+    "G33_1_EFS"
+   ]
+  },
+  {
+   "type": "sum",
+   "name": "G33_1_DW0",
+   "inputs": [
+    "G33_1_ONE",
+    "G33_1_OMG"
+   ],
+   "signs": [
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "lag",
+   "name": "G33_1_DW1",
+   "input": "G33_1_DW0",
+   "time_constant_s": 0.008514513230710195
+  },
+  {
+   "type": "lag",
+   "name": "G33_1_DW",
+   "input": "G33_1_DW1",
+   "time_constant_s": 0.008155486769289805
+  },
+  {
+   "type": "lag",
+   "name": "G33_1_DPWG",
+   "input": "G33_1_DW",
+   "time_constant_s": 0.1,
+   "gain": 13.531982841445755
+  },
+  {
+   "type": "sum",
+   "name": "G33_1_PM0",
+   "inputs": [
+    "G33_1_ONE",
+    "G33_1_DPWG"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "constant",
+   "name": "G33_1_PMAX",
+   "value": 1.2
+  },
+  {
+   "type": "function",
+   "name": "G33_1_PMECH",
+   "function": "min",
+   "inputs": [
+    "G33_1_PMAX",
+    "G33_1_PM0"
+   ]
+  },
+  {
+   "type": "product",
+   "name": "G33_1_TGP",
+   "inputs": [
+    "G33_1_TGI",
+    "G33_1_PMECH"
+   ]
+  },
+  {
+   "type": "quotient",
+   "name": "G33_1_TMO",
+   "inputs": [
+    "G33_1_TGP",
+    "G33_1_OMG"
+   ]
+  },
+  {
+   "type": "measurement",
+   "name": "G33_1_P",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G33_1",
+    "signal": "active_power_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G34_1_EA",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G34_1",
+    "signal": "terminal_voltage_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G34_1_OMG",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G34_1",
+    "signal": "speed_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G34_1_IFD",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G34_1",
+    "signal": "field_current_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G34_1_EFS",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G34_1",
+    "signal": "initial_field_voltage_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G34_1_TGI",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G34_1",
+    "signal": "initial_mechanical_torque_pu"
+   }
+  },
+  {
+   "type": "initial_value",
+   "name": "G34_1_EAS",
+   "input": "G34_1_EA"
+  },
+  {
+   "type": "initial_value",
+   "name": "G34_1_IFD0",
+   "input": "G34_1_IFD"
+  },
+  {
+   "type": "constant",
+   "name": "G34_1_ONE",
+   "value": 1.0
+  },
+  {
+   "type": "lag",
+   "name": "G34_1_VRMS1",
+   "input": "G34_1_EA",
+   "time_constant_s": 0.008514513230710195
+  },
+  {
+   "type": "lag",
+   "name": "G34_1_VRMS",
+   "input": "G34_1_VRMS1",
+   "time_constant_s": 0.008155486769289805
+  },
+  {
+   "type": "constant",
+   "name": "G34_1_INVKA",
+   "value": 0.025
+  },
+  {
+   "type": "sum",
+   "name": "G34_1_EXL0",
+   "inputs": [
+    "G34_1_EAS",
+    "G34_1_INVKA",
+    "G34_1_VRMS"
+   ],
+   "signs": [
+    1.0,
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "limiter",
+   "name": "G34_1_EXCLIM",
+   "input": "G34_1_EXL0",
+   "minimum": -1.5,
+   "maximum": 1.5
+  },
+  {
+   "type": "lag",
+   "name": "G34_1_EXTL",
+   "input": "G34_1_EXCLIM",
+   "time_constant_s": 10.0
+  },
+  {
+   "type": "gain",
+   "name": "G34_1_EXCVA_k0",
+   "input": "G34_1_EXCLIM",
+   "gain": 4.0
+  },
+  {
+   "type": "gain",
+   "name": "G34_1_EXCVA_k1",
+   "input": "G34_1_EXTL",
+   "gain": 36.0
+  },
+  {
+   "type": "sum",
+   "name": "G34_1_EXCVA",
+   "inputs": [
+    "G34_1_EXCVA_k0",
+    "G34_1_EXCVA_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "lag",
+   "name": "G34_1_EXOL",
+   "input": "G34_1_EXCVA",
+   "time_constant_s": 0.025
+  },
+  {
+   "type": "gain",
+   "name": "G34_1_EXCOUT_k0",
+   "input": "G34_1_EXCVA",
+   "gain": 16.0
+  },
+  {
+   "type": "gain",
+   "name": "G34_1_EXCOUT_k1",
+   "input": "G34_1_EXOL",
+   "gain": -15.0
+  },
+  {
+   "type": "sum",
+   "name": "G34_1_EXCOUT",
+   "inputs": [
+    "G34_1_EXCOUT_k0",
+    "G34_1_EXCOUT_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "quotient",
+   "name": "G34_1_IFDN0",
+   "inputs": [
+    "G34_1_IFD",
+    "G34_1_IFD0"
+   ]
+  },
+  {
+   "type": "delay",
+   "name": "G34_1_IFDN",
+   "input": "G34_1_IFDN0",
+   "delay_s": 1e-05,
+   "initial_output": 1.0
+  },
+  {
+   "type": "gain",
+   "name": "G34_1_EFU_k0",
+   "input": "G34_1_VRMS",
+   "gain": 4.5
+  },
+  {
+   "type": "gain",
+   "name": "G34_1_EFU_k1",
+   "input": "G34_1_IFDN",
+   "gain": -0.038
+  },
+  {
+   "type": "sum",
+   "name": "G34_1_EFU",
+   "inputs": [
+    "G34_1_EFU_k0",
+    "G34_1_EFU_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "gain",
+   "name": "G34_1_EFL",
+   "input": "G34_1_VRMS",
+   "gain": -4.0
+  },
+  {
+   "type": "function",
+   "name": "G34_1_EFD1",
+   "function": "max",
+   "inputs": [
+    "G34_1_EFL",
+    "G34_1_EXCOUT"
+   ]
+  },
+  {
+   "type": "function",
+   "name": "G34_1_EFD",
+   "function": "min",
+   "inputs": [
+    "G34_1_EFU",
+    "G34_1_EFD1"
+   ]
+  },
+  {
+   "type": "product",
+   "name": "G34_1_EFO",
+   "inputs": [
+    "G34_1_EFD",
+    "G34_1_EFS"
+   ]
+  },
+  {
+   "type": "sum",
+   "name": "G34_1_DW0",
+   "inputs": [
+    "G34_1_ONE",
+    "G34_1_OMG"
+   ],
+   "signs": [
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "lag",
+   "name": "G34_1_DW1",
+   "input": "G34_1_DW0",
+   "time_constant_s": 0.008514513230710195
+  },
+  {
+   "type": "lag",
+   "name": "G34_1_DW",
+   "input": "G34_1_DW1",
+   "time_constant_s": 0.008155486769289805
+  },
+  {
+   "type": "lag",
+   "name": "G34_1_DPWG",
+   "input": "G34_1_DW",
+   "time_constant_s": 0.1,
+   "gain": 13.823992922115623
+  },
+  {
+   "type": "sum",
+   "name": "G34_1_PM0",
+   "inputs": [
+    "G34_1_ONE",
+    "G34_1_DPWG"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "constant",
+   "name": "G34_1_PMAX",
+   "value": 1.2
+  },
+  {
+   "type": "function",
+   "name": "G34_1_PMECH",
+   "function": "min",
+   "inputs": [
+    "G34_1_PMAX",
+    "G34_1_PM0"
+   ]
+  },
+  {
+   "type": "product",
+   "name": "G34_1_TGP",
+   "inputs": [
+    "G34_1_TGI",
+    "G34_1_PMECH"
+   ]
+  },
+  {
+   "type": "quotient",
+   "name": "G34_1_TMO",
+   "inputs": [
+    "G34_1_TGP",
+    "G34_1_OMG"
+   ]
+  },
+  {
+   "type": "measurement",
+   "name": "G34_1_P",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G34_1",
+    "signal": "active_power_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G35_1_EA",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G35_1",
+    "signal": "terminal_voltage_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G35_1_OMG",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G35_1",
+    "signal": "speed_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G35_1_IFD",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G35_1",
+    "signal": "field_current_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G35_1_EFS",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G35_1",
+    "signal": "initial_field_voltage_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G35_1_TGI",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G35_1",
+    "signal": "initial_mechanical_torque_pu"
+   }
+  },
+  {
+   "type": "initial_value",
+   "name": "G35_1_EAS",
+   "input": "G35_1_EA"
+  },
+  {
+   "type": "initial_value",
+   "name": "G35_1_IFD0",
+   "input": "G35_1_IFD"
+  },
+  {
+   "type": "constant",
+   "name": "G35_1_ONE",
+   "value": 1.0
+  },
+  {
+   "type": "lag",
+   "name": "G35_1_VRMS1",
+   "input": "G35_1_EA",
+   "time_constant_s": 0.008514513230710195
+  },
+  {
+   "type": "lag",
+   "name": "G35_1_VRMS",
+   "input": "G35_1_VRMS1",
+   "time_constant_s": 0.008155486769289805
+  },
+  {
+   "type": "constant",
+   "name": "G35_1_INVKA",
+   "value": 0.2
+  },
+  {
+   "type": "sum",
+   "name": "G35_1_EXL0",
+   "inputs": [
+    "G35_1_EAS",
+    "G35_1_INVKA",
+    "G35_1_VRMS"
+   ],
+   "signs": [
+    1.0,
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "limiter",
+   "name": "G35_1_EXCLIM",
+   "input": "G35_1_EXL0",
+   "minimum": -1.5,
+   "maximum": 1.5
+  },
+  {
+   "type": "lag",
+   "name": "G35_1_EXTL",
+   "input": "G35_1_EXCLIM",
+   "time_constant_s": 10.0
+  },
+  {
+   "type": "gain",
+   "name": "G35_1_EXCVA_k0",
+   "input": "G35_1_EXCLIM",
+   "gain": 0.5
+  },
+  {
+   "type": "gain",
+   "name": "G35_1_EXCVA_k1",
+   "input": "G35_1_EXTL",
+   "gain": 4.5
+  },
+  {
+   "type": "sum",
+   "name": "G35_1_EXCVA",
+   "inputs": [
+    "G35_1_EXCVA_k0",
+    "G35_1_EXCVA_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "lag",
+   "name": "G35_1_EXOL",
+   "input": "G35_1_EXCVA",
+   "time_constant_s": 0.025
+  },
+  {
+   "type": "gain",
+   "name": "G35_1_EXCOUT_k0",
+   "input": "G35_1_EXCVA",
+   "gain": 16.0
+  },
+  {
+   "type": "gain",
+   "name": "G35_1_EXCOUT_k1",
+   "input": "G35_1_EXOL",
+   "gain": -15.0
+  },
+  {
+   "type": "sum",
+   "name": "G35_1_EXCOUT",
+   "inputs": [
+    "G35_1_EXCOUT_k0",
+    "G35_1_EXCOUT_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "quotient",
+   "name": "G35_1_IFDN0",
+   "inputs": [
+    "G35_1_IFD",
+    "G35_1_IFD0"
+   ]
+  },
+  {
+   "type": "delay",
+   "name": "G35_1_IFDN",
+   "input": "G35_1_IFDN0",
+   "delay_s": 1e-05,
+   "initial_output": 1.0
+  },
+  {
+   "type": "gain",
+   "name": "G35_1_EFU_k0",
+   "input": "G35_1_VRMS",
+   "gain": 4.5
+  },
+  {
+   "type": "gain",
+   "name": "G35_1_EFU_k1",
+   "input": "G35_1_IFDN",
+   "gain": -0.038
+  },
+  {
+   "type": "sum",
+   "name": "G35_1_EFU",
+   "inputs": [
+    "G35_1_EFU_k0",
+    "G35_1_EFU_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "gain",
+   "name": "G35_1_EFL",
+   "input": "G35_1_VRMS",
+   "gain": -4.0
+  },
+  {
+   "type": "function",
+   "name": "G35_1_EFD1",
+   "function": "max",
+   "inputs": [
+    "G35_1_EFL",
+    "G35_1_EXCOUT"
+   ]
+  },
+  {
+   "type": "function",
+   "name": "G35_1_EFD",
+   "function": "min",
+   "inputs": [
+    "G35_1_EFU",
+    "G35_1_EFD1"
+   ]
+  },
+  {
+   "type": "product",
+   "name": "G35_1_EFO",
+   "inputs": [
+    "G35_1_EFD",
+    "G35_1_EFS"
+   ]
+  },
+  {
+   "type": "sum",
+   "name": "G35_1_DW0",
+   "inputs": [
+    "G35_1_ONE",
+    "G35_1_OMG"
+   ],
+   "signs": [
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "lag",
+   "name": "G35_1_DW1",
+   "input": "G35_1_DW0",
+   "time_constant_s": 0.008514513230710195
+  },
+  {
+   "type": "lag",
+   "name": "G35_1_DW",
+   "input": "G35_1_DW1",
+   "time_constant_s": 0.008155486769289805
+  },
+  {
+   "type": "lag",
+   "name": "G35_1_DPWG",
+   "input": "G35_1_DW",
+   "time_constant_s": 0.1,
+   "gain": 15.69612305760477
+  },
+  {
+   "type": "sum",
+   "name": "G35_1_PM0",
+   "inputs": [
+    "G35_1_ONE",
+    "G35_1_DPWG"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "constant",
+   "name": "G35_1_PMAX",
+   "value": 1.2
+  },
+  {
+   "type": "function",
+   "name": "G35_1_PMECH",
+   "function": "min",
+   "inputs": [
+    "G35_1_PMAX",
+    "G35_1_PM0"
+   ]
+  },
+  {
+   "type": "product",
+   "name": "G35_1_TGP",
+   "inputs": [
+    "G35_1_TGI",
+    "G35_1_PMECH"
+   ]
+  },
+  {
+   "type": "quotient",
+   "name": "G35_1_TMO",
+   "inputs": [
+    "G35_1_TGP",
+    "G35_1_OMG"
+   ]
+  },
+  {
+   "type": "measurement",
+   "name": "G35_1_P",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G35_1",
+    "signal": "active_power_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G36_1_EA",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G36_1",
+    "signal": "terminal_voltage_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G36_1_OMG",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G36_1",
+    "signal": "speed_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G36_1_IFD",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G36_1",
+    "signal": "field_current_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G36_1_EFS",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G36_1",
+    "signal": "initial_field_voltage_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G36_1_TGI",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G36_1",
+    "signal": "initial_mechanical_torque_pu"
+   }
+  },
+  {
+   "type": "initial_value",
+   "name": "G36_1_EAS",
+   "input": "G36_1_EA"
+  },
+  {
+   "type": "initial_value",
+   "name": "G36_1_IFD0",
+   "input": "G36_1_IFD"
+  },
+  {
+   "type": "constant",
+   "name": "G36_1_ONE",
+   "value": 1.0
+  },
+  {
+   "type": "lag",
+   "name": "G36_1_VRMS1",
+   "input": "G36_1_EA",
+   "time_constant_s": 0.008514513230710195
+  },
+  {
+   "type": "lag",
+   "name": "G36_1_VRMS",
+   "input": "G36_1_VRMS1",
+   "time_constant_s": 0.008155486769289805
+  },
+  {
+   "type": "constant",
+   "name": "G36_1_INVKA",
+   "value": 0.025
+  },
+  {
+   "type": "sum",
+   "name": "G36_1_EXL0",
+   "inputs": [
+    "G36_1_EAS",
+    "G36_1_INVKA",
+    "G36_1_VRMS"
+   ],
+   "signs": [
+    1.0,
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "limiter",
+   "name": "G36_1_EXCLIM",
+   "input": "G36_1_EXL0",
+   "minimum": -1.5,
+   "maximum": 1.5
+  },
+  {
+   "type": "lag",
+   "name": "G36_1_EXTL",
+   "input": "G36_1_EXCLIM",
+   "time_constant_s": 10.0
+  },
+  {
+   "type": "gain",
+   "name": "G36_1_EXCVA_k0",
+   "input": "G36_1_EXCLIM",
+   "gain": 4.0
+  },
+  {
+   "type": "gain",
+   "name": "G36_1_EXCVA_k1",
+   "input": "G36_1_EXTL",
+   "gain": 36.0
+  },
+  {
+   "type": "sum",
+   "name": "G36_1_EXCVA",
+   "inputs": [
+    "G36_1_EXCVA_k0",
+    "G36_1_EXCVA_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "lag",
+   "name": "G36_1_EXOL",
+   "input": "G36_1_EXCVA",
+   "time_constant_s": 0.025
+  },
+  {
+   "type": "gain",
+   "name": "G36_1_EXCOUT_k0",
+   "input": "G36_1_EXCVA",
+   "gain": 16.0
+  },
+  {
+   "type": "gain",
+   "name": "G36_1_EXCOUT_k1",
+   "input": "G36_1_EXOL",
+   "gain": -15.0
+  },
+  {
+   "type": "sum",
+   "name": "G36_1_EXCOUT",
+   "inputs": [
+    "G36_1_EXCOUT_k0",
+    "G36_1_EXCOUT_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "quotient",
+   "name": "G36_1_IFDN0",
+   "inputs": [
+    "G36_1_IFD",
+    "G36_1_IFD0"
+   ]
+  },
+  {
+   "type": "delay",
+   "name": "G36_1_IFDN",
+   "input": "G36_1_IFDN0",
+   "delay_s": 1e-05,
+   "initial_output": 1.0
+  },
+  {
+   "type": "gain",
+   "name": "G36_1_EFU_k0",
+   "input": "G36_1_VRMS",
+   "gain": 4.5
+  },
+  {
+   "type": "gain",
+   "name": "G36_1_EFU_k1",
+   "input": "G36_1_IFDN",
+   "gain": -0.038
+  },
+  {
+   "type": "sum",
+   "name": "G36_1_EFU",
+   "inputs": [
+    "G36_1_EFU_k0",
+    "G36_1_EFU_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "gain",
+   "name": "G36_1_EFL",
+   "input": "G36_1_VRMS",
+   "gain": -4.0
+  },
+  {
+   "type": "function",
+   "name": "G36_1_EFD1",
+   "function": "max",
+   "inputs": [
+    "G36_1_EFL",
+    "G36_1_EXCOUT"
+   ]
+  },
+  {
+   "type": "function",
+   "name": "G36_1_EFD",
+   "function": "min",
+   "inputs": [
+    "G36_1_EFU",
+    "G36_1_EFD1"
+   ]
+  },
+  {
+   "type": "product",
+   "name": "G36_1_EFO",
+   "inputs": [
+    "G36_1_EFD",
+    "G36_1_EFS"
+   ]
+  },
+  {
+   "type": "sum",
+   "name": "G36_1_DW0",
+   "inputs": [
+    "G36_1_ONE",
+    "G36_1_OMG"
+   ],
+   "signs": [
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "lag",
+   "name": "G36_1_DW1",
+   "input": "G36_1_DW0",
+   "time_constant_s": 0.008514513230710195
+  },
+  {
+   "type": "lag",
+   "name": "G36_1_DW",
+   "input": "G36_1_DW1",
+   "time_constant_s": 0.008155486769289805
+  },
+  {
+   "type": "lag",
+   "name": "G36_1_DPWG",
+   "input": "G36_1_DW",
+   "time_constant_s": 0.1,
+   "gain": 11.894991019281779
+  },
+  {
+   "type": "sum",
+   "name": "G36_1_PM0",
+   "inputs": [
+    "G36_1_ONE",
+    "G36_1_DPWG"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "constant",
+   "name": "G36_1_PMAX",
+   "value": 1.2
+  },
+  {
+   "type": "function",
+   "name": "G36_1_PMECH",
+   "function": "min",
+   "inputs": [
+    "G36_1_PMAX",
+    "G36_1_PM0"
+   ]
+  },
+  {
+   "type": "product",
+   "name": "G36_1_TGP",
+   "inputs": [
+    "G36_1_TGI",
+    "G36_1_PMECH"
+   ]
+  },
+  {
+   "type": "quotient",
+   "name": "G36_1_TMO",
+   "inputs": [
+    "G36_1_TGP",
+    "G36_1_OMG"
+   ]
+  },
+  {
+   "type": "measurement",
+   "name": "G36_1_P",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G36_1",
+    "signal": "active_power_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G37_1_EA",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G37_1",
+    "signal": "terminal_voltage_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G37_1_OMG",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G37_1",
+    "signal": "speed_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G37_1_IFD",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G37_1",
+    "signal": "field_current_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G37_1_EFS",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G37_1",
+    "signal": "initial_field_voltage_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G37_1_TGI",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G37_1",
+    "signal": "initial_mechanical_torque_pu"
+   }
+  },
+  {
+   "type": "initial_value",
+   "name": "G37_1_EAS",
+   "input": "G37_1_EA"
+  },
+  {
+   "type": "initial_value",
+   "name": "G37_1_IFD0",
+   "input": "G37_1_IFD"
+  },
+  {
+   "type": "constant",
+   "name": "G37_1_ONE",
+   "value": 1.0
+  },
+  {
+   "type": "lag",
+   "name": "G37_1_VRMS1",
+   "input": "G37_1_EA",
+   "time_constant_s": 0.008514513230710195
+  },
+  {
+   "type": "lag",
+   "name": "G37_1_VRMS",
+   "input": "G37_1_VRMS1",
+   "time_constant_s": 0.008155486769289805
+  },
+  {
+   "type": "constant",
+   "name": "G37_1_INVKA",
+   "value": 0.2
+  },
+  {
+   "type": "sum",
+   "name": "G37_1_EXL0",
+   "inputs": [
+    "G37_1_EAS",
+    "G37_1_INVKA",
+    "G37_1_VRMS"
+   ],
+   "signs": [
+    1.0,
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "limiter",
+   "name": "G37_1_EXCLIM",
+   "input": "G37_1_EXL0",
+   "minimum": -1.5,
+   "maximum": 1.5
+  },
+  {
+   "type": "lag",
+   "name": "G37_1_EXTL",
+   "input": "G37_1_EXCLIM",
+   "time_constant_s": 10.0
+  },
+  {
+   "type": "gain",
+   "name": "G37_1_EXCVA_k0",
+   "input": "G37_1_EXCLIM",
+   "gain": 0.5
+  },
+  {
+   "type": "gain",
+   "name": "G37_1_EXCVA_k1",
+   "input": "G37_1_EXTL",
+   "gain": 4.5
+  },
+  {
+   "type": "sum",
+   "name": "G37_1_EXCVA",
+   "inputs": [
+    "G37_1_EXCVA_k0",
+    "G37_1_EXCVA_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "lag",
+   "name": "G37_1_EXOL",
+   "input": "G37_1_EXCVA",
+   "time_constant_s": 0.025
+  },
+  {
+   "type": "gain",
+   "name": "G37_1_EXCOUT_k0",
+   "input": "G37_1_EXCVA",
+   "gain": 16.0
+  },
+  {
+   "type": "gain",
+   "name": "G37_1_EXCOUT_k1",
+   "input": "G37_1_EXOL",
+   "gain": -15.0
+  },
+  {
+   "type": "sum",
+   "name": "G37_1_EXCOUT",
+   "inputs": [
+    "G37_1_EXCOUT_k0",
+    "G37_1_EXCOUT_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "quotient",
+   "name": "G37_1_IFDN0",
+   "inputs": [
+    "G37_1_IFD",
+    "G37_1_IFD0"
+   ]
+  },
+  {
+   "type": "delay",
+   "name": "G37_1_IFDN",
+   "input": "G37_1_IFDN0",
+   "delay_s": 1e-05,
+   "initial_output": 1.0
+  },
+  {
+   "type": "gain",
+   "name": "G37_1_EFU_k0",
+   "input": "G37_1_VRMS",
+   "gain": 4.5
+  },
+  {
+   "type": "gain",
+   "name": "G37_1_EFU_k1",
+   "input": "G37_1_IFDN",
+   "gain": -0.038
+  },
+  {
+   "type": "sum",
+   "name": "G37_1_EFU",
+   "inputs": [
+    "G37_1_EFU_k0",
+    "G37_1_EFU_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "gain",
+   "name": "G37_1_EFL",
+   "input": "G37_1_VRMS",
+   "gain": -4.0
+  },
+  {
+   "type": "function",
+   "name": "G37_1_EFD1",
+   "function": "max",
+   "inputs": [
+    "G37_1_EFL",
+    "G37_1_EXCOUT"
+   ]
+  },
+  {
+   "type": "function",
+   "name": "G37_1_EFD",
+   "function": "min",
+   "inputs": [
+    "G37_1_EFU",
+    "G37_1_EFD1"
+   ]
+  },
+  {
+   "type": "product",
+   "name": "G37_1_EFO",
+   "inputs": [
+    "G37_1_EFD",
+    "G37_1_EFS"
+   ]
+  },
+  {
+   "type": "sum",
+   "name": "G37_1_DW0",
+   "inputs": [
+    "G37_1_ONE",
+    "G37_1_OMG"
+   ],
+   "signs": [
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "lag",
+   "name": "G37_1_DW1",
+   "input": "G37_1_DW0",
+   "time_constant_s": 0.008514513230710195
+  },
+  {
+   "type": "lag",
+   "name": "G37_1_DW",
+   "input": "G37_1_DW1",
+   "time_constant_s": 0.008155486769289805
+  },
+  {
+   "type": "lag",
+   "name": "G37_1_DPWG",
+   "input": "G37_1_DW",
+   "time_constant_s": 0.1,
+   "gain": 10.739984964021051
+  },
+  {
+   "type": "sum",
+   "name": "G37_1_PM0",
+   "inputs": [
+    "G37_1_ONE",
+    "G37_1_DPWG"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "constant",
+   "name": "G37_1_PMAX",
+   "value": 1.2
+  },
+  {
+   "type": "function",
+   "name": "G37_1_PMECH",
+   "function": "min",
+   "inputs": [
+    "G37_1_PMAX",
+    "G37_1_PM0"
+   ]
+  },
+  {
+   "type": "product",
+   "name": "G37_1_TGP",
+   "inputs": [
+    "G37_1_TGI",
+    "G37_1_PMECH"
+   ]
+  },
+  {
+   "type": "quotient",
+   "name": "G37_1_TMO",
+   "inputs": [
+    "G37_1_TGP",
+    "G37_1_OMG"
+   ]
+  },
+  {
+   "type": "measurement",
+   "name": "G37_1_P",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G37_1",
+    "signal": "active_power_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G38_1_EA",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G38_1",
+    "signal": "terminal_voltage_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G38_1_OMG",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G38_1",
+    "signal": "speed_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G38_1_IFD",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G38_1",
+    "signal": "field_current_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G38_1_EFS",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G38_1",
+    "signal": "initial_field_voltage_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G38_1_TGI",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G38_1",
+    "signal": "initial_mechanical_torque_pu"
+   }
+  },
+  {
+   "type": "initial_value",
+   "name": "G38_1_EAS",
+   "input": "G38_1_EA"
+  },
+  {
+   "type": "initial_value",
+   "name": "G38_1_IFD0",
+   "input": "G38_1_IFD"
+  },
+  {
+   "type": "constant",
+   "name": "G38_1_ONE",
+   "value": 1.0
+  },
+  {
+   "type": "lag",
+   "name": "G38_1_VRMS1",
+   "input": "G38_1_EA",
+   "time_constant_s": 0.008514513230710195
+  },
+  {
+   "type": "lag",
+   "name": "G38_1_VRMS",
+   "input": "G38_1_VRMS1",
+   "time_constant_s": 0.008155486769289805
+  },
+  {
+   "type": "constant",
+   "name": "G38_1_INVKA",
+   "value": 0.025
+  },
+  {
+   "type": "sum",
+   "name": "G38_1_EXL0",
+   "inputs": [
+    "G38_1_EAS",
+    "G38_1_INVKA",
+    "G38_1_VRMS"
+   ],
+   "signs": [
+    1.0,
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "limiter",
+   "name": "G38_1_EXCLIM",
+   "input": "G38_1_EXL0",
+   "minimum": -1.5,
+   "maximum": 1.5
+  },
+  {
+   "type": "lag",
+   "name": "G38_1_EXTL",
+   "input": "G38_1_EXCLIM",
+   "time_constant_s": 10.0
+  },
+  {
+   "type": "gain",
+   "name": "G38_1_EXCVA_k0",
+   "input": "G38_1_EXCLIM",
+   "gain": 4.0
+  },
+  {
+   "type": "gain",
+   "name": "G38_1_EXCVA_k1",
+   "input": "G38_1_EXTL",
+   "gain": 36.0
+  },
+  {
+   "type": "sum",
+   "name": "G38_1_EXCVA",
+   "inputs": [
+    "G38_1_EXCVA_k0",
+    "G38_1_EXCVA_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "lag",
+   "name": "G38_1_EXOL",
+   "input": "G38_1_EXCVA",
+   "time_constant_s": 0.025
+  },
+  {
+   "type": "gain",
+   "name": "G38_1_EXCOUT_k0",
+   "input": "G38_1_EXCVA",
+   "gain": 16.0
+  },
+  {
+   "type": "gain",
+   "name": "G38_1_EXCOUT_k1",
+   "input": "G38_1_EXOL",
+   "gain": -15.0
+  },
+  {
+   "type": "sum",
+   "name": "G38_1_EXCOUT",
+   "inputs": [
+    "G38_1_EXCOUT_k0",
+    "G38_1_EXCOUT_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "quotient",
+   "name": "G38_1_IFDN0",
+   "inputs": [
+    "G38_1_IFD",
+    "G38_1_IFD0"
+   ]
+  },
+  {
+   "type": "delay",
+   "name": "G38_1_IFDN",
+   "input": "G38_1_IFDN0",
+   "delay_s": 1e-05,
+   "initial_output": 1.0
+  },
+  {
+   "type": "gain",
+   "name": "G38_1_EFU_k0",
+   "input": "G38_1_VRMS",
+   "gain": 4.5
+  },
+  {
+   "type": "gain",
+   "name": "G38_1_EFU_k1",
+   "input": "G38_1_IFDN",
+   "gain": -0.038
+  },
+  {
+   "type": "sum",
+   "name": "G38_1_EFU",
+   "inputs": [
+    "G38_1_EFU_k0",
+    "G38_1_EFU_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "gain",
+   "name": "G38_1_EFL",
+   "input": "G38_1_VRMS",
+   "gain": -4.0
+  },
+  {
+   "type": "function",
+   "name": "G38_1_EFD1",
+   "function": "max",
+   "inputs": [
+    "G38_1_EFL",
+    "G38_1_EXCOUT"
+   ]
+  },
+  {
+   "type": "function",
+   "name": "G38_1_EFD",
+   "function": "min",
+   "inputs": [
+    "G38_1_EFU",
+    "G38_1_EFD1"
+   ]
+  },
+  {
+   "type": "product",
+   "name": "G38_1_EFO",
+   "inputs": [
+    "G38_1_EFD",
+    "G38_1_EFS"
+   ]
+  },
+  {
+   "type": "sum",
+   "name": "G38_1_DW0",
+   "inputs": [
+    "G38_1_ONE",
+    "G38_1_OMG"
+   ],
+   "signs": [
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "lag",
+   "name": "G38_1_DW1",
+   "input": "G38_1_DW0",
+   "time_constant_s": 0.008514513230710195
+  },
+  {
+   "type": "lag",
+   "name": "G38_1_DW",
+   "input": "G38_1_DW1",
+   "time_constant_s": 0.008155486769289805
+  },
+  {
+   "type": "lag",
+   "name": "G38_1_DPWG",
+   "input": "G38_1_DW",
+   "time_constant_s": 0.1,
+   "gain": 24.563989191844755
+  },
+  {
+   "type": "sum",
+   "name": "G38_1_PM0",
+   "inputs": [
+    "G38_1_ONE",
+    "G38_1_DPWG"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "constant",
+   "name": "G38_1_PMAX",
+   "value": 1.2
+  },
+  {
+   "type": "function",
+   "name": "G38_1_PMECH",
+   "function": "min",
+   "inputs": [
+    "G38_1_PMAX",
+    "G38_1_PM0"
+   ]
+  },
+  {
+   "type": "product",
+   "name": "G38_1_TGP",
+   "inputs": [
+    "G38_1_TGI",
+    "G38_1_PMECH"
+   ]
+  },
+  {
+   "type": "quotient",
+   "name": "G38_1_TMO",
+   "inputs": [
+    "G38_1_TGP",
+    "G38_1_OMG"
+   ]
+  },
+  {
+   "type": "measurement",
+   "name": "G38_1_P",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G38_1",
+    "signal": "active_power_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G39_1_EA",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G39_1",
+    "signal": "terminal_voltage_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G39_1_OMG",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G39_1",
+    "signal": "speed_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G39_1_IFD",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G39_1",
+    "signal": "field_current_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G39_1_EFS",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G39_1",
+    "signal": "initial_field_voltage_pu"
+   }
+  },
+  {
+   "type": "measurement",
+   "name": "G39_1_TGI",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G39_1",
+    "signal": "initial_mechanical_torque_pu"
+   }
+  },
+  {
+   "type": "initial_value",
+   "name": "G39_1_EAS",
+   "input": "G39_1_EA"
+  },
+  {
+   "type": "initial_value",
+   "name": "G39_1_IFD0",
+   "input": "G39_1_IFD"
+  },
+  {
+   "type": "constant",
+   "name": "G39_1_ONE",
+   "value": 1.0
+  },
+  {
+   "type": "lag",
+   "name": "G39_1_VRMS1",
+   "input": "G39_1_EA",
+   "time_constant_s": 0.008514513230710195
+  },
+  {
+   "type": "lag",
+   "name": "G39_1_VRMS",
+   "input": "G39_1_VRMS1",
+   "time_constant_s": 0.008155486769289805
+  },
+  {
+   "type": "constant",
+   "name": "G39_1_INVKA",
+   "value": 1.0
+  },
+  {
+   "type": "sum",
+   "name": "G39_1_EXL0",
+   "inputs": [
+    "G39_1_EAS",
+    "G39_1_INVKA",
+    "G39_1_VRMS"
+   ],
+   "signs": [
+    1.0,
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "limiter",
+   "name": "G39_1_EXCLIM",
+   "input": "G39_1_EXL0",
+   "minimum": -1.5,
+   "maximum": 1.5
+  },
+  {
+   "type": "lag",
+   "name": "G39_1_EXTL",
+   "input": "G39_1_EXCLIM",
+   "time_constant_s": 10.0
+  },
+  {
+   "type": "gain",
+   "name": "G39_1_EXCVA_k0",
+   "input": "G39_1_EXCLIM",
+   "gain": 0.1
+  },
+  {
+   "type": "gain",
+   "name": "G39_1_EXCVA_k1",
+   "input": "G39_1_EXTL",
+   "gain": 0.9
+  },
+  {
+   "type": "sum",
+   "name": "G39_1_EXCVA",
+   "inputs": [
+    "G39_1_EXCVA_k0",
+    "G39_1_EXCVA_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "lag",
+   "name": "G39_1_EXOL",
+   "input": "G39_1_EXCVA",
+   "time_constant_s": 0.025
+  },
+  {
+   "type": "gain",
+   "name": "G39_1_EXCOUT_k0",
+   "input": "G39_1_EXCVA",
+   "gain": 16.0
+  },
+  {
+   "type": "gain",
+   "name": "G39_1_EXCOUT_k1",
+   "input": "G39_1_EXOL",
+   "gain": -15.0
+  },
+  {
+   "type": "sum",
+   "name": "G39_1_EXCOUT",
+   "inputs": [
+    "G39_1_EXCOUT_k0",
+    "G39_1_EXCOUT_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "quotient",
+   "name": "G39_1_IFDN0",
+   "inputs": [
+    "G39_1_IFD",
+    "G39_1_IFD0"
+   ]
+  },
+  {
+   "type": "delay",
+   "name": "G39_1_IFDN",
+   "input": "G39_1_IFDN0",
+   "delay_s": 1e-05,
+   "initial_output": 1.0
+  },
+  {
+   "type": "gain",
+   "name": "G39_1_EFU_k0",
+   "input": "G39_1_VRMS",
+   "gain": 4.5
+  },
+  {
+   "type": "gain",
+   "name": "G39_1_EFU_k1",
+   "input": "G39_1_IFDN",
+   "gain": -0.038
+  },
+  {
+   "type": "sum",
+   "name": "G39_1_EFU",
+   "inputs": [
+    "G39_1_EFU_k0",
+    "G39_1_EFU_k1"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "gain",
+   "name": "G39_1_EFL",
+   "input": "G39_1_VRMS",
+   "gain": -4.0
+  },
+  {
+   "type": "function",
+   "name": "G39_1_EFD1",
+   "function": "max",
+   "inputs": [
+    "G39_1_EFL",
+    "G39_1_EXCOUT"
+   ]
+  },
+  {
+   "type": "function",
+   "name": "G39_1_EFD",
+   "function": "min",
+   "inputs": [
+    "G39_1_EFU",
+    "G39_1_EFD1"
+   ]
+  },
+  {
+   "type": "product",
+   "name": "G39_1_EFO",
+   "inputs": [
+    "G39_1_EFD",
+    "G39_1_EFS"
+   ]
+  },
+  {
+   "type": "sum",
+   "name": "G39_1_DW0",
+   "inputs": [
+    "G39_1_ONE",
+    "G39_1_OMG"
+   ],
+   "signs": [
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "lag",
+   "name": "G39_1_DW1",
+   "input": "G39_1_DW0",
+   "time_constant_s": 0.008514513230710195
+  },
+  {
+   "type": "lag",
+   "name": "G39_1_DW",
+   "input": "G39_1_DW1",
+   "time_constant_s": 0.008155486769289805
+  },
+  {
+   "type": "lag",
+   "name": "G39_1_DPWG",
+   "input": "G39_1_DW",
+   "time_constant_s": 0.1,
+   "gain": 0.1
+  },
+  {
+   "type": "sum",
+   "name": "G39_1_PM0",
+   "inputs": [
+    "G39_1_ONE",
+    "G39_1_DPWG"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "constant",
+   "name": "G39_1_PMAX",
+   "value": 2000.0
+  },
+  {
+   "type": "function",
+   "name": "G39_1_PMECH",
+   "function": "min",
+   "inputs": [
+    "G39_1_PMAX",
+    "G39_1_PM0"
+   ]
+  },
+  {
+   "type": "product",
+   "name": "G39_1_TGP",
+   "inputs": [
+    "G39_1_TGI",
+    "G39_1_PMECH"
+   ]
+  },
+  {
+   "type": "quotient",
+   "name": "G39_1_TMO",
+   "inputs": [
+    "G39_1_TGP",
+    "G39_1_OMG"
+   ]
+  },
+  {
+   "type": "measurement",
+   "name": "G39_1_P",
+   "quantity": {
+    "type": "component_signal",
+    "component": "G39_1",
+    "signal": "active_power_pu"
+   }
+  },
+  {
+   "type": "three_phase_measurement",
+   "name": "IBR30_1_V",
+   "quantity": {
+    "type": "bus_voltage",
+    "bus": "B30"
+   }
+  },
+  {
+   "type": "three_phase_measurement",
+   "name": "IBR30_1_I",
+   "quantity": {
+    "type": "branch_current",
+    "component": "IBR30_1"
+   }
+  },
+  {
+   "type": "integrator",
+   "name": "IBR30_1_THETA",
+   "input": "IBR30_1_WE",
+   "initial_value": 1.8,
+   "minimum": -3.141592653589793,
+   "maximum": 3.141592653589793,
+   "wrap": true
+  },
+  {
+   "type": "abc_to_dq0",
+   "name": "IBR30_1_VDQ",
+   "inputs": [
+    "IBR30_1_V.a",
+    "IBR30_1_V.b",
+    "IBR30_1_V.c"
+   ],
+   "angle": "IBR30_1_THETA"
+  },
+  {
+   "type": "abc_to_dq0",
+   "name": "IBR30_1_IDQ",
+   "inputs": [
+    "IBR30_1_I.a",
+    "IBR30_1_I.b",
+    "IBR30_1_I.c"
+   ],
+   "angle": "IBR30_1_THETA"
+  },
+  {
+   "type": "gain",
+   "name": "IBR30_1_VGD",
+   "input": "IBR30_1_VDQ.d",
+   "gain": 5.567022142689041e-05
+  },
+  {
+   "type": "gain",
+   "name": "IBR30_1_VGQ",
+   "input": "IBR30_1_VDQ.q",
+   "gain": 5.567022142689041e-05
+  },
+  {
+   "type": "gain",
+   "name": "IBR30_1_IGD",
+   "input": "IBR30_1_IDQ.d",
+   "gain": 5.613413993878115e-05
+  },
+  {
+   "type": "gain",
+   "name": "IBR30_1_IGQ",
+   "input": "IBR30_1_IDQ.q",
+   "gain": 5.613413993878115e-05
+  },
+  {
+   "type": "pi",
+   "name": "IBR30_1_DW",
+   "input": "IBR30_1_VGQ",
+   "proportional_gain": 188.5,
+   "integral_gain_per_s": 134000.0,
+   "initial_integral": 0.0
+  },
+  {
+   "type": "constant",
+   "name": "IBR30_1_WC",
+   "value": 376.9911
+  },
+  {
+   "type": "sum",
+   "name": "IBR30_1_WE",
+   "inputs": [
+    "IBR30_1_WC",
+    "IBR30_1_DW"
+   ],
+   "signs": [
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "product",
+   "name": "IBR30_1_PD1",
+   "inputs": [
+    "IBR30_1_VGD",
+    "IBR30_1_IGD"
+   ]
+  },
+  {
+   "type": "product",
+   "name": "IBR30_1_PD2",
+   "inputs": [
+    "IBR30_1_VGQ",
+    "IBR30_1_IGQ"
+   ]
+  },
+  {
+   "type": "sum",
+   "name": "IBR30_1_PDQ0",
+   "inputs": [
+    "IBR30_1_PD1",
+    "IBR30_1_PD2"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "product",
+   "name": "IBR30_1_QD1",
+   "inputs": [
+    "IBR30_1_VGQ",
+    "IBR30_1_IGD"
+   ]
+  },
+  {
+   "type": "product",
+   "name": "IBR30_1_QD2",
+   "inputs": [
+    "IBR30_1_VGD",
+    "IBR30_1_IGQ"
+   ]
+  },
+  {
+   "type": "sum",
+   "name": "IBR30_1_QDQ0",
+   "inputs": [
+    "IBR30_1_QD1",
+    "IBR30_1_QD2"
+   ],
+   "signs": [
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "function",
+   "name": "IBR30_1_VGR",
+   "function": "hypot",
+   "inputs": [
+    "IBR30_1_VGD",
+    "IBR30_1_VGQ"
+   ]
+  },
+  {
+   "type": "lag",
+   "name": "IBR30_1_VGPU1",
+   "input": "IBR30_1_VGR",
+   "time_constant_s": 0.008514513230710195,
+   "initial_input": 1.0
+  },
+  {
+   "type": "lag",
+   "name": "IBR30_1_VGPU",
+   "input": "IBR30_1_VGPU1",
+   "time_constant_s": 0.008155486769289805,
+   "initial_input": 1.0
+  },
+  {
+   "type": "lag",
+   "name": "IBR30_1_PG1",
+   "input": "IBR30_1_PDQ0",
+   "time_constant_s": 0.008514513230710195,
+   "initial_input": 0.0
+  },
+  {
+   "type": "lag",
+   "name": "IBR30_1_PG",
+   "input": "IBR30_1_PG1",
+   "time_constant_s": 0.008155486769289805,
+   "initial_input": 0.0
+  },
+  {
+   "type": "lag",
+   "name": "IBR30_1_QG1",
+   "input": "IBR30_1_QDQ0",
+   "time_constant_s": 0.008514513230710195,
+   "initial_input": 0.0
+  },
+  {
+   "type": "lag",
+   "name": "IBR30_1_QG",
+   "input": "IBR30_1_QG1",
+   "time_constant_s": 0.008155486769289805,
+   "initial_input": 0.0
+  },
+  {
+   "type": "lag",
+   "name": "IBR30_1_VFILT",
+   "input": "IBR30_1_VGPU",
+   "time_constant_s": 0.03,
+   "initial_input": 1.0
+  },
+  {
+   "type": "constant",
+   "name": "IBR30_1_VREF0",
+   "value": 1.0
+  },
+  {
+   "type": "constant",
+   "name": "IBR30_1_VDIP",
+   "value": 0.5
+  },
+  {
+   "type": "constant",
+   "name": "IBR30_1_VUP",
+   "value": 1.1
+  },
+  {
+   "type": "comparator",
+   "name": "IBR30_1_VLO",
+   "inputs": [
+    "IBR30_1_VDIP",
+    "IBR30_1_VGPU"
+   ]
+  },
+  {
+   "type": "comparator",
+   "name": "IBR30_1_VHI",
+   "inputs": [
+    "IBR30_1_VGPU",
+    "IBR30_1_VUP"
+   ]
+  },
+  {
+   "type": "sum",
+   "name": "IBR30_1_VOUT",
+   "inputs": [
+    "IBR30_1_VLO",
+    "IBR30_1_VHI"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "constant",
+   "name": "IBR30_1_ONE",
+   "value": 1.0
+  },
+  {
+   "type": "function",
+   "name": "IBR30_1_VOUT1",
+   "function": "min",
+   "inputs": [
+    "IBR30_1_ONE",
+    "IBR30_1_VOUT"
+   ]
+  },
+  {
+   "type": "gain",
+   "name": "IBR30_1_VSUP",
+   "input": "IBR30_1_VOUT1",
+   "gain": 2.0
+  },
+  {
+   "type": "sum",
+   "name": "IBR30_1_IQVRFin",
+   "inputs": [
+    "IBR30_1_VREF0",
+    "IBR30_1_VFILT"
+   ],
+   "signs": [
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "piecewise_linear",
+   "name": "IBR30_1_IQVRF",
+   "input": "IBR30_1_IQVRFin",
+   "x": [
+    -100000000.0,
+    -1.05,
+    -0.05,
+    -0.0499,
+    0.0499,
+    0.05,
+    1.05,
+    100000000.0
+   ],
+   "y": [
+    -1.05,
+    -1.05,
+    -0.05,
+    0.0,
+    0.0,
+    0.05,
+    1.05,
+    1.05
+   ]
+  },
+  {
+   "type": "piecewise_linear",
+   "name": "IBR30_1_VDL1",
+   "input": "IBR30_1_VFILT",
+   "x": [
+    -1.0,
+    2.0,
+    3.0,
+    4.0
+   ],
+   "y": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "piecewise_linear",
+   "name": "IBR30_1_VDL2",
+   "input": "IBR30_1_VFILT",
+   "x": [
+    -1.0,
+    2.0,
+    3.0,
+    4.0
+   ],
+   "y": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "time_series",
+   "name": "IBR30_1_RAMP",
+   "times_s": [
+    0.0,
+    0.01,
+    0.02
+   ],
+   "values": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "interpolation": "linear"
+  },
+  {
+   "type": "gain",
+   "name": "IBR30_1_PREF",
+   "input": "IBR30_1_RAMP",
+   "gain": 0.5208333333333334
+  },
+  {
+   "type": "lag",
+   "name": "IBR30_1_VCLAG",
+   "input": "IBR30_1_VFILT",
+   "time_constant_s": 0.02,
+   "initial_input": 1.0
+  },
+  {
+   "type": "sum",
+   "name": "IBR30_1_QEX1",
+   "inputs": [
+    "IBR30_1_VREF0",
+    "IBR30_1_VCLAG"
+   ],
+   "signs": [
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "piecewise_linear",
+   "name": "IBR30_1_QEX2",
+   "input": "IBR30_1_QEX1",
+   "x": [
+    -2000.0,
+    -999.0,
+    999.0,
+    2000.0
+   ],
+   "y": [
+    -999.0,
+    -999.0,
+    999.0,
+    999.0
+   ]
+  },
+  {
+   "type": "pi",
+   "name": "IBR30_1_QEX3",
+   "input": "IBR30_1_QEX2",
+   "proportional_gain": 0.04,
+   "integral_gain_per_s": 8.0,
+   "initial_integral": 0.12945650625,
+   "anti_windup": "state",
+   "output_min": -0.329,
+   "output_max": 0.329
+  },
+  {
+   "type": "lag",
+   "name": "IBR30_1_QEX4",
+   "input": "IBR30_1_QEX3",
+   "time_constant_s": 0.08,
+   "initial_input": 0.12945650625
+  },
+  {
+   "type": "limiter",
+   "name": "IBR30_1_QCTRL",
+   "input": "IBR30_1_QEX4",
+   "minimum": -0.329,
+   "maximum": 0.329
+  },
+  {
+   "type": "sum",
+   "name": "IBR30_1_QERR",
+   "inputs": [
+    "IBR30_1_QCTRL",
+    "IBR30_1_QG"
+   ],
+   "signs": [
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "pi",
+   "name": "IBR30_1_QREG",
+   "input": "IBR30_1_QERR",
+   "proportional_gain": 1.0,
+   "integral_gain_per_s": 0.333,
+   "initial_integral": 0.0,
+   "anti_windup": "state",
+   "output_min": 0.9,
+   "output_max": 1.07
+  },
+  {
+   "type": "step",
+   "name": "IBR30_1_IQLIM",
+   "time_s": 0.25,
+   "before": 0.0,
+   "after": 1.0
+  },
+  {
+   "type": "function",
+   "name": "IBR30_1_IQMAX",
+   "function": "min",
+   "inputs": [
+    "IBR30_1_VDL1",
+    "IBR30_1_IQLIM"
+   ]
+  },
+  {
+   "type": "gain",
+   "name": "IBR30_1_IQMIN",
+   "input": "IBR30_1_IQMAX",
+   "gain": -1.0
+  },
+  {
+   "type": "sum",
+   "name": "IBR30_1_VERR",
+   "inputs": [
+    "IBR30_1_QREG",
+    "IBR30_1_VFILT"
+   ],
+   "signs": [
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "pi",
+   "name": "IBR30_1_IQRAW",
+   "input": "IBR30_1_VERR",
+   "proportional_gain": 0.2,
+   "integral_gain_per_s": 5.0,
+   "initial_integral": 0.0,
+   "anti_windup": "state",
+   "output_min": "IBR30_1_IQMIN",
+   "output_max": "IBR30_1_IQMAX"
+  },
+  {
+   "type": "product",
+   "name": "IBR30_1_IQINJ",
+   "inputs": [
+    "IBR30_1_IQVRF",
+    "IBR30_1_VSUP"
+   ]
+  },
+  {
+   "type": "sum",
+   "name": "IBR30_1_IQSUM",
+   "inputs": [
+    "IBR30_1_IQINJ",
+    "IBR30_1_IQRAW"
+   ],
+   "signs": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "limiter",
+   "name": "IBR30_1_IQCMD",
+   "input": "IBR30_1_IQSUM",
+   "minimum": "IBR30_1_IQMIN",
+   "maximum": "IBR30_1_IQMAX"
+  },
+  {
+   "type": "product",
+   "name": "IBR30_1_IQ2",
+   "inputs": [
+    "IBR30_1_IQCMD",
+    "IBR30_1_IQCMD"
+   ]
+  },
+  {
+   "type": "constant",
+   "name": "IBR30_1_IMAX2",
+   "value": 1.0
+  },
+  {
+   "type": "sum",
+   "name": "IBR30_1_IPL2",
+   "inputs": [
+    "IBR30_1_IMAX2",
+    "IBR30_1_IQ2"
+   ],
+   "signs": [
+    1.0,
+    -1.0
+   ]
+  },
+  {
+   "type": "constant",
+   "name": "IBR30_1_ZERO",
+   "value": 0.0
+  },
+  {
+   "type": "function",
+   "name": "IBR30_1_IPL2p",
+   "function": "max",
+   "inputs": [
+    "IBR30_1_ZERO",
+    "IBR30_1_IPL2"
+   ]
+  },
+  {
+   "type": "function",
+   "name": "IBR30_1_IPLIM",
+   "function": "sqrt",
+   "inputs": [
+    "IBR30_1_IPL2p"
+   ]
+  },
+  {
+   "type": "function",
+   "name": "IBR30_1_IPMAX",
+   "function": "min",
+   "inputs": [
+    "IBR30_1_VDL2",
+    "IBR30_1_IPLIM"
+   ]
+  },
+  {
+   "type": "lag",
+   "name": "IBR30_1_PORD",
+   "input": "IBR30_1_PREF",
+   "time_constant_s": 0.03,
+   "initial_input": 0.0,
+   "minimum": 0.0,
+   "maximum": 1.0
+  },
+  {
+   "type": "quotient",
+   "name": "IBR30_1_IPRAW",
+   "inputs": [
+    "IBR30_1_PORD",
+    "IBR30_1_VFILT"
+   ],
+   "minimum_denominator": 0.001
+  },
+  {
+   "type": "limiter",
+   "name": "IBR30_1_IPCMD",
+   "input": "IBR30_1_IPRAW",
+   "minimum": 0.0,
+   "maximum": "IBR30_1_IPMAX"
+  },
+  {
+   "type": "lag",
+   "name": "IBR30_1_VLVPL",
+   "input": "IBR30_1_VGPU",
+   "time_constant_s": 0.015,
+   "initial_input": 0.0
+  },
+  {
+   "type": "piecewise_linear",
+   "name": "IBR30_1_LVPL",
+   "input": "IBR30_1_VLVPL",
+   "x": [
+    -1.0,
+    0.4,
+    0.9,
+    10.0
+   ],
+   "y": [
+    0.0,
+    0.0,
+    1.2,
+    1.2
+   ]
+  },
+  {
+   "type": "piecewise_linear",
+   "name": "IBR30_1_LVACM",
+   "input": "IBR30_1_VGPU",
+   "x": [
+    -1.0,
+    0.4,
+    0.8,
+    10.0
+   ],
+   "y": [
+    0.0,
+    0.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "type": "lag",
+   "name": "IBR30_1_IPREF",
+   "input": "IBR30_1_IPCMD",
+   "time_constant_s": 0.02,
+   "initial_input": 0.0,
+   "minimum": -1000000000.0,
+   "maximum": "IBR30_1_LVPL"
+  },
+  {
+   "type": "lag",
+   "name": "IBR30_1_IQREF",
+   "input": "IBR30_1_IQCMD",
+   "time_constant_s": 0.02,
+   "initial_input": 0.0,
+   "minimum": -1.5,
+   "maximum": 1.5
+  },
+  {
+   "type": "product",
+   "name": "IBR30_1_IDL",
+   "inputs": [
+    "IBR30_1_IPREF",
+    "IBR30_1_LVACM"
+   ]
+  },
+  {
+   "type": "gain",
+   "name": "IBR30_1_ID",
+   "input": "IBR30_1_IDL",
+   "gain": -1.0
+  },
+  {
+   "type": "dq0_to_abc",
+   "name": "IBR30_1_JDQ",
+   "d": "IBR30_1_ID",
+   "q": "IBR30_1_IQREF",
+   "angle": "IBR30_1_THETA"
+  },
+  {
+   "type": "gain",
+   "name": "IBR30_1_JA",
+   "input": "IBR30_1_JDQ.a",
+   "gain": 17814.470856604934
+  },
+  {
+   "type": "gain",
+   "name": "IBR30_1_JB",
+   "input": "IBR30_1_JDQ.b",
+   "gain": 17814.470856604934
+  },
+  {
+   "type": "gain",
+   "name": "IBR30_1_JC",
+   "input": "IBR30_1_JDQ.c",
+   "gain": 17814.470856604934
+  }
+ ],
+ "outputs": [
+  {
+   "type": "signal",
+   "signal": "SWP_W"
+  },
+  {
+   "type": "signal",
+   "signal": "G32_1_OMG"
+  },
+  {
+   "type": "signal",
+   "signal": "G32_1_EA"
+  },
+  {
+   "type": "signal",
+   "signal": "G32_1_TMO"
+  },
+  {
+   "type": "signal",
+   "signal": "G32_1_EFO"
+  },
+  {
+   "type": "signal",
+   "signal": "G32_1_P"
+  },
+  {
+   "type": "signal",
+   "signal": "G33_1_OMG"
+  },
+  {
+   "type": "signal",
+   "signal": "G33_1_EA"
+  },
+  {
+   "type": "signal",
+   "signal": "G33_1_TMO"
+  },
+  {
+   "type": "signal",
+   "signal": "G33_1_EFO"
+  },
+  {
+   "type": "signal",
+   "signal": "G33_1_P"
+  },
+  {
+   "type": "signal",
+   "signal": "G34_1_OMG"
+  },
+  {
+   "type": "signal",
+   "signal": "G34_1_EA"
+  },
+  {
+   "type": "signal",
+   "signal": "G34_1_TMO"
+  },
+  {
+   "type": "signal",
+   "signal": "G34_1_EFO"
+  },
+  {
+   "type": "signal",
+   "signal": "G34_1_P"
+  },
+  {
+   "type": "signal",
+   "signal": "G35_1_OMG"
+  },
+  {
+   "type": "signal",
+   "signal": "G35_1_EA"
+  },
+  {
+   "type": "signal",
+   "signal": "G35_1_TMO"
+  },
+  {
+   "type": "signal",
+   "signal": "G35_1_EFO"
+  },
+  {
+   "type": "signal",
+   "signal": "G35_1_P"
+  },
+  {
+   "type": "signal",
+   "signal": "G36_1_OMG"
+  },
+  {
+   "type": "signal",
+   "signal": "G36_1_EA"
+  },
+  {
+   "type": "signal",
+   "signal": "G36_1_TMO"
+  },
+  {
+   "type": "signal",
+   "signal": "G36_1_EFO"
+  },
+  {
+   "type": "signal",
+   "signal": "G36_1_P"
+  },
+  {
+   "type": "signal",
+   "signal": "G37_1_OMG"
+  },
+  {
+   "type": "signal",
+   "signal": "G37_1_EA"
+  },
+  {
+   "type": "signal",
+   "signal": "G37_1_TMO"
+  },
+  {
+   "type": "signal",
+   "signal": "G37_1_EFO"
+  },
+  {
+   "type": "signal",
+   "signal": "G37_1_P"
+  },
+  {
+   "type": "signal",
+   "signal": "G38_1_OMG"
+  },
+  {
+   "type": "signal",
+   "signal": "G38_1_EA"
+  },
+  {
+   "type": "signal",
+   "signal": "G38_1_TMO"
+  },
+  {
+   "type": "signal",
+   "signal": "G38_1_EFO"
+  },
+  {
+   "type": "signal",
+   "signal": "G38_1_P"
+  },
+  {
+   "type": "signal",
+   "signal": "G39_1_OMG"
+  },
+  {
+   "type": "signal",
+   "signal": "G39_1_EA"
+  },
+  {
+   "type": "signal",
+   "signal": "G39_1_TMO"
+  },
+  {
+   "type": "signal",
+   "signal": "G39_1_EFO"
+  },
+  {
+   "type": "signal",
+   "signal": "G39_1_P"
+  },
+  {
+   "type": "signal",
+   "signal": "IBR30_1_PDQ0"
+  },
+  {
+   "type": "signal",
+   "signal": "IBR30_1_QDQ0"
+  },
+  {
+   "type": "signal",
+   "signal": "IBR30_1_WE"
+  },
+  {
+   "type": "signal",
+   "signal": "IBR30_1_VGPU"
+  },
+  {
+   "type": "signal",
+   "signal": "IBR30_1_VFILT"
+  },
+  {
+   "type": "signal",
+   "signal": "IBR30_1_QREG"
+  },
+  {
+   "type": "signal",
+   "signal": "IBR30_1_QEX3"
+  },
+  {
+   "type": "signal",
+   "signal": "IBR30_1_QEX4"
+  },
+  {
+   "type": "signal",
+   "signal": "IBR30_1_IQCMD"
+  },
+  {
+   "type": "signal",
+   "signal": "IBR30_1_IPCMD"
+  },
+  {
+   "type": "signal",
+   "signal": "IBR30_1_IQRAW"
+  },
+  {
+   "type": "signal",
+   "signal": "IBR30_1_PG"
+  },
+  {
+   "type": "signal",
+   "signal": "IBR30_1_QG"
+  },
+  {
+   "type": "signal",
+   "signal": "IBR30_1_VSUP"
+  },
+  {
+   "type": "signal",
+   "signal": "IBR30_1_LVPL"
+  },
+  {
+   "type": "signal",
+   "signal": "IBR30_1_IPREF"
+  },
+  {
+   "type": "signal",
+   "signal": "IBR30_1_IQREF"
+  },
+  {
+   "type": "branch_current",
+   "component": "F16"
+  },
+  {
+   "type": "bus_voltage",
+   "bus": "B16"
+  }
+ ]
+}

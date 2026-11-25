@@ -1,0 +1,47 @@
+{
+ "format": "openkeito-model",
+ "version": "0.7",
+ "name": "scan_38_1",
+ "simulation": {
+  "time_step_s": 1e-05,
+  "end_time_s": 0.0001
+ },
+ "components": [
+  {
+   "type": "synchronous_machine",
+   "name": "G38_1",
+   "bus": "P",
+   "rated_power_mva": 920.0,
+   "rated_voltage_kv": 22.0,
+   "frequency_hz": 60.0,
+   "xd_pu": 1.8743,
+   "xq_pu": 1.8245,
+   "xd_transient_pu": 0.5073,
+   "xq_transient_pu": 0.5224,
+   "xd_subtransient_pu": 0.3382,
+   "xq_subtransient_pu": 0.3382,
+   "xl_pu": 0.2652,
+   "ra_pu": 0.001,
+   "td0_transient_s": 4.79,
+   "td0_subtransient_s": 0.04,
+   "tq0_transient_s": 1.96,
+   "tq0_subtransient_s": 0.04,
+   "inertia_h_s": 3.0,
+   "damping_pu": 0.0,
+   "operating_point": {
+    "active_power_mw": 830.0,
+    "reactive_power_mvar": 42.670867,
+    "voltage_pu": 1.0,
+    "angle_deg": 8.092735
+   }
+  }
+ ],
+ "frequency_scan": {
+  "frequencies_hz": [
+   60.0
+  ],
+  "buses": [
+   "P"
+  ]
+ }
+}

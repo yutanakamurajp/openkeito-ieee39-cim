@@ -1,0 +1,64 @@
+{
+ "format": "openkeito-model",
+ "version": "0.7",
+ "name": "scan_15_16_1",
+ "simulation": {
+  "time_step_s": 1e-05,
+  "end_time_s": 0.0001
+ },
+ "components": [
+  {
+   "type": "bergeron_line",
+   "name": "L15_16_1",
+   "buses": [
+    "P",
+    "Q"
+   ],
+   "length_km": 30.787854914934993,
+   "per_km": {
+    "type": "sequence",
+    "r1_ohm_per_km": 0.03479375237280189,
+    "l1_h_per_km": 0.0009639521885399959,
+    "c1_f_per_km": 1.2377911413109636e-08,
+    "r0_ohm_per_km": 0.06958750474560378,
+    "l0_h_per_km": 0.002891856565619988,
+    "c0_f_per_km": 7.426746847865782e-09
+   }
+  },
+  {
+   "type": "resistor",
+   "name": "RQa",
+   "nodes": [
+    "Q.a",
+    "gnd"
+   ],
+   "resistance_ohm": 1e-06
+  },
+  {
+   "type": "resistor",
+   "name": "RQb",
+   "nodes": [
+    "Q.b",
+    "gnd"
+   ],
+   "resistance_ohm": 1e-06
+  },
+  {
+   "type": "resistor",
+   "name": "RQc",
+   "nodes": [
+    "Q.c",
+    "gnd"
+   ],
+   "resistance_ohm": 1e-06
+  }
+ ],
+ "frequency_scan": {
+  "frequencies_hz": [
+   60.0
+  ],
+  "buses": [
+   "P"
+  ]
+ }
+}

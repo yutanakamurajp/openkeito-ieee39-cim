@@ -1,0 +1,47 @@
+{
+ "format": "openkeito-model",
+ "version": "0.7",
+ "name": "scan_36_1",
+ "simulation": {
+  "time_step_s": 1e-05,
+  "end_time_s": 0.0001
+ },
+ "components": [
+  {
+   "type": "synchronous_machine",
+   "name": "G36_1",
+   "bus": "P",
+   "rated_power_mva": 610.0,
+   "rated_voltage_kv": 22.0,
+   "frequency_hz": 60.0,
+   "xd_pu": 1.7995,
+   "xq_pu": 1.7812,
+   "xd_transient_pu": 0.2989,
+   "xq_transient_pu": 1.1346,
+   "xd_subtransient_pu": 0.2471,
+   "xq_subtransient_pu": 0.2471,
+   "xl_pu": 0.1964,
+   "ra_pu": 0.001,
+   "td0_transient_s": 5.66,
+   "td0_subtransient_s": 0.014,
+   "tq0_transient_s": 1.5,
+   "tq0_subtransient_s": 0.207,
+   "inertia_h_s": 3.0,
+   "damping_pu": 0.0,
+   "operating_point": {
+    "active_power_mw": 560.0,
+    "reactive_power_mvar": 43.072666,
+    "voltage_pu": 1.0,
+    "angle_deg": 10.14603
+   }
+  }
+ ],
+ "frequency_scan": {
+  "frequencies_hz": [
+   60.0
+  ],
+  "buses": [
+   "P"
+  ]
+ }
+}

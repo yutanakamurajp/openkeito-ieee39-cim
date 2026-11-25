@@ -1,0 +1,131 @@
+{
+ "f02_3lg": {
+  "iqcmd_max": 1.0,
+  "p_min_mw": -2.952004758198175,
+  "vgpu_min": 0.07040628963867573,
+  "vsup_max": 2.0
+ },
+ "f15": {
+  "max_abs_dangle_deg": 0.0014084367531097541,
+  "max_abs_dp_mw": 0.049080181606314,
+  "max_abs_dq_mvar": 0.021109820014025615,
+  "max_abs_dv_pu": 1.557947275210303e-05
+ },
+ "f16": {
+  "p_4p5_5_mw": 249.7828620637899,
+  "pll_freq_ptp_5_6_pu": 2.784289649837568e-05,
+  "q_4p5_5_mvar": 61.25100348069769,
+  "q_peak_mvar": 91.14348074840126,
+  "q_peak_time_s": 0.9275000000000001,
+  "qreg0_zero": {
+   "p_4p5_5_mw": 249.75505360248033,
+   "q_4p5_5_mvar": 64.0791807062375
+  }
+ },
+ "f17": {
+  "ac12_ka": 14.847720101643784,
+  "ac1_ka": 16.267870366991644,
+  "dc12_ka": -0.8188582805417708,
+  "dc1_ka": -7.644631201307929,
+  "inception_angle_deg": 143.03171621584156
+ },
+ "f18": {
+  "fault_current_min_max_ka": [
+   -23.535592895909257,
+   14.057233866183994
+  ],
+  "g35_speed_max": [
+   12.200500000000002,
+   1.0076498622321723
+  ],
+  "g35_speed_min": [
+   12.610000000000001,
+   0.9969670866056197
+  ],
+  "p_prefault_mw": 249.7129206589877,
+  "q_20s_mvar": 73.84876497115657,
+  "q_peak_after_clearing": [
+   12.577000000000002,
+   160.72319117553633
+  ],
+  "q_peak_start": [
+   1.356,
+   90.35488606927389
+  ],
+  "q_prefault_mvar": 76.56145977187309,
+  "q_valley": [
+   15.999,
+   62.677694637418696
+  ]
+ },
+ "openkeito": [
+  "openkeito 0.11.0"
+ ],
+ "openkeito_checks": {
+  "definitions": {
+   "compute_time": "OpenKeito alone (openkeito run, wall time in summary.json), model building and file transfer excluded",
+   "machine_slip_max_pct": "max over machines G32-G39 and time of |speed - 1| in percent",
+   "oscillation_index_slg16": "max |y[k] - (y[k-1] + y[k+1])/2| over 5 ms from 0.2 ms after the event, divided by max|y| within one cycle around the event",
+   "start_deviation_to_0p01s_rel": "max over recorded voltages and currents of max|y(t) - sqrt(2) Re(Y e^{j omega t})| for t < 0.01 s, divided by the peak sqrt(2)|Y|, where Y is the initial phasor solution (phasors.csv)"
+  },
+  "machine_slip_max_pct": {
+   "slg16": 0.7654813995304766,
+   "slg16_20s": 0.7649862232172344,
+   "tpf02": 0.9014017601076896
+  },
+  "oscillation_index_slg16": {
+   "clearing_fault_current": 0.0,
+   "clearing_v16_a": 0.018874645478271026,
+   "clearing_v16_c": 0.024546430086875192,
+   "inception_fault_current": 0.0158648895452952,
+   "inception_v16_a": 0.08111533553333232,
+   "inception_v16_c": 1.34173806849949e-06
+  },
+  "start_deviation_to_0p01s_rel": {
+   "nofault": 3.841431710012363e-06,
+   "nofault_qreg0": 3.841431710012363e-06,
+   "slg16": 1.0860049304795032e-06,
+   "tpf02": 6.962916591600607e-07
+  }
+ },
+ "t08": {
+  "components_20s": 92,
+  "components_nf": 79,
+  "controls_nf": 407
+ },
+ "t09": {
+  "items": 34,
+  "max_rel_diff_x": 8.332550773815228e-07,
+  "max_rel_diff_z": 8.238248953018612e-07
+ },
+ "t10": {
+  "mag_exclude": {
+   "q_20s_mvar": 73.84819281872956,
+   "q_peak_mvar": 90.35488606927389,
+   "q_peak_time_s": 1.356,
+   "q_prefault_mvar": 76.56145977187309
+  },
+  "mag_shunt_in_phasor": {
+   "q_20s_mvar": 78.96762925403809,
+   "q_peak_mvar": 86.2232445497436,
+   "q_peak_time_s": 1.5665000000000002,
+   "q_prefault_mvar": 80.77000119970701
+  },
+  "mag_transformer": {
+   "q_20s_mvar": 79.59879135912244,
+   "q_peak_mvar": 86.87221614190365,
+   "q_peak_time_s": 1.566,
+   "q_prefault_mvar": 81.40545496230244
+  },
+  "pi_conditional": {
+   "q_4p5_5_mvar": 61.84796138567112,
+   "q_peak_mvar": 84.79069793930813,
+   "q_peak_time_s": 0.9450000000000001
+  },
+  "pi_state": {
+   "q_4p5_5_mvar": 61.25100348069769,
+   "q_peak_mvar": 91.14348074840126,
+   "q_peak_time_s": 0.9275000000000001
+  }
+ }
+}

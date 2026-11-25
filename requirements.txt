@@ -1,0 +1,6 @@
+# Python 3.10 or later; the versions used for figures/ (Python 3.11)
+emtiop==1.0.1
+pyyaml==6.0.3
+numpy==2.4.6
+pandas==3.1.1
+matplotlib==3.11.2

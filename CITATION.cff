@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use these models or scripts, please cite the paper and OpenKeito as below."
+type: software
+title: "IEEE 39-bus system with a WECC generic PV plant, from CIM to OpenKeito"
+abstract: >-
+  Converter from the emthub CIM of the IEEE 39-bus test system to OpenKeito models, the generated models,
+  and the scripts that run them with OpenKeito and make the IEEE 39-bus figures and tables of the paper
+  "OpenKeito: An Open Electromagnetic Transient Simulator for People and AI Agents That Starts From
+  Power-Flow and CIM Data".
+authors:
+  - family-names: "Nakamura"
+    given-names: "Yuta"
+    orcid: "https://orcid.org/0000-0003-4570-5437"
+license:
+  - MIT
+  - Apache-2.0
+repository-code: "https://github.com/yutanakamurajp/openkeito-ieee39-cim"
+keywords:
+  - power systems
+  - electromagnetic transients
+  - EMT
+  - CIM
+  - IEEE 39-bus
+  - OpenKeito
+references:
+  - type: software
+    title: "OpenKeito"
+    authors:
+      - name: "The OpenKeito contributors"
+    doi: "10.5281/zenodo.24523022"
+    repository-code: "https://github.com/yutanakamurajp/OpenKeito"
+    version: "0.11.0"
+  - type: article
+    title: "OpenKeito: An Open Electromagnetic Transient Simulator for People and AI Agents That Starts From Power-Flow and CIM Data"
+    authors:
+      - family-names: "Nakamura"
+        given-names: "Yuta"
+        orcid: "https://orcid.org/0000-0003-4570-5437"
+    journal: "IEEE Access"
+    notes: "Submitted."
+  - type: data
+    title: "emthub (IEEE 39-bus CIM instance files)"
+    authors:
+      - name: "The emthub authors"
+    repository-code: "https://github.com/temcdrm/emthub"
+    commit: "86d3aaf2391843c75b08294bfac9c62d00ce47db"
+    license: Apache-2.0

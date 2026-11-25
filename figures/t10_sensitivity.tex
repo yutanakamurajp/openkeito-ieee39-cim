@@ -1,0 +1,13 @@
+% Made by make_figures.py
+% * PI rows: mean over 4.5-5 s of the no-fault case; magnetizing rows: mean over 11.5-12.0 s of the 20 s case
+\begin{tabular}{llrr}
+\toprule
+Choice & Variant & PV Q peak after start-up (Mvar) & PV Q (Mvar)$^*$ \\
+\midrule
+PI anti-windup (REEC\_A, REPC\_A) & state (integral held) & 91.1 at 0.928 s & 61.25 \\
+ & conditional integration & 84.8 at 0.945 s & 61.85 \\
+\midrule Magnetizing branches & excluded, enter at $t=0^+$ & 90.4 at 1.36 s & 76.56 \\
+ & shunt in the phasor solution & 86.2 at 1.57 s & 80.77 \\
+ & inside the transformer & 86.9 at 1.57 s & 81.41 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,17 @@
+% Made by make_figures.py
+\begin{tabular}{llr}
+\toprule
+CIM class & OpenKeito & Count \\
+\midrule
+ACLineSegment & \texttt{bergeron\_line} & 34 \\
+PowerTransformer & \texttt{three\_phase\_transformer} & 12 \\
+TransformerCoreAdmittance & \texttt{three\_phase\_load} (excluded from the phasor solution) & 12 \\
+EnergyConsumer & \texttt{three\_phase\_load} & 19 \\
+SynchronousMachine (bus 32--39) & \texttt{synchronous\_machine} + exciter and governor blocks & 8 \\
+SynchronousMachine (bus 31, swing) & \texttt{three\_phase\_source} behind $R_a + jX_d^\prime$ & 1 \\
+PowerElectronicsConnection (PV) & \texttt{three\_phase\_controlled\_current\_source} + REGC\_A/REEC\_A/REPC\_A & 1 \\
+(initializing source of the PV) & \texttt{three\_phase\_source} + 3 \texttt{switch} & 1 \\
+(fault) & \texttt{fault} & 1 \\
+Total (no-fault case) & 79 components, 407 control blocks &  \\
+\bottomrule
+\end{tabular}
